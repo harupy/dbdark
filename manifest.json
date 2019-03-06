@@ -12,7 +12,7 @@
         "https://*.databricks.com/*"
       ],
       "js": ["contentscript.js"],
-      "run_at": "document_end"
+      "run_at": "document_idle"
     }
   ],
   "web_accessible_resources": ["main.js"]

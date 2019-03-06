@@ -27,7 +27,8 @@ The extension will be enabled automatically when you open a Databricks notebook.
 
 
 ## How it works
-What this extension does is quite simple. It just runs a JS script and overrides the properties of a `CodeMirror` object in each cell on the notebook.
+Each cell on the notebook has an object called `CodeMirror` which contains functions to get and edit the cell content. This extension injects a JS script to override the properties of `CodeMirror` and add features not provided by default.
+
 
 [CodeMirror: User Manual](https://codemirror.net/doc/manual.html)
 
