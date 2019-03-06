@@ -48,7 +48,7 @@ Each cell on the notebook has an object called `CodeMirror` which contains funct
 ## Snippets (Press `Tab` to expand)
 |Prefix|Snippet|
 |:-|:-|
-|`sel`|`select()`|
+|`sl`|`select()`|
 |`al`|`alias()`|
 |`dt`|`distinct()`|
 |`gb`|`groupBy()`|

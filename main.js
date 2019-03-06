@@ -20,11 +20,13 @@
         cm.setCursor({line, ch});
       }
 
+      const spChars = [' ', ',', '.', '(', '[', '{', '+', '-', '*', '/', '=', '~', '%', '&', '@'];
+
       const deleteCursorWord = cm => {
         const anchor = cm.getCursor();
         const head = {line: anchor.line, ch: anchor.ch - 1};
         const charCursorLeft = cm.getRange(head, anchor)
-        if ((anchor.ch !== 0) && ([' ', ',', '.', '(', '[', '{', '=', '~'].indexOf(charCursorLeft) === -1)) {
+        if ((anchor.ch !== 0) && (spChars.indexOf(charCursorLeft) === -1)) {
           cm.execCommand('goWordLeft');
         }
         cm.execCommand('delWordAfter');
@@ -36,13 +38,13 @@
         const cursor = cm.getCursor();
         const cursorLine= cm.getLine(cursor.line);
         const cursorLeft = cursorLine.slice(0, cursor.ch);
-        const lastIdxs = [' ', ',', '.', '(', '[', '{', '=', '~'].map(c => cursorLeft.lastIndexOf(c));
+        const lastIdxs = spChars.map(c => cursorLeft.lastIndexOf(c));
         const prefixStartIdx = Math.max(...lastIdxs) + 1;
         const head = {line: cursor.line, ch: prefixStartIdx};
         const prefix = cm.getRange(head, cursor);
 
         const snippets = {
-          'sel'   : 'select()',
+          'sl'   : 'select()',
           'al'    : 'alias()',
           'gb'    : 'groupBy()',
           'pb'    : 'partitionBy()',
