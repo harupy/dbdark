@@ -44,7 +44,7 @@ Each cell on the notebook has an object called `CodeMirror` which provides funct
 |`Ctrl-Shift-u`|Duplicate the current line above|
 
 ## Key Sequences
-This feature allows you to trigger actions by pressing one or more keys multiple times <span style="color: red; font-weight: bold;">fast</span> in sequence (This feature is similar to mapping `jj` to `Esc` in Vim).
+This feature allows you to trigger actions by pressing one or more keys multiple times **fast** in sequence. This feature is similar to mapping `jj` to `Esc` in Vim.
 
 |Keys|Action|
 |:-|:-|
@@ -76,6 +76,19 @@ This feature allows you to trigger actions by pressing one or more keys multiple
 |`dp`|`display()`|
 |`jn`|`join()`|
 |`tpd`|`toPandas()`|
+
+## Customize Snippets
+You can create your own snippet by adding a key/value pair to `snippets` in `main.js`.
+```js
+const snippets = {
+          'sl'    : 'select()',
+          'al'    : 'alias()',
+          'gb'    : 'groupBy()',
+          ...
+          // add your own snippet
+          'ms'   : 'mysnippet()',
+      {
+```
 
 ## References
 - [Is there a way to use Vim keybindings in Google Colaboratory?](https://stackoverflow.com/questions/48674326/is-there-a-way-to-use-vim-keybindings-in-google-colaboratory)
