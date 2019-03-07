@@ -29,7 +29,11 @@
         if ((anchor.ch !== 0) && (spChars.indexOf(charCursorRight) === -1)) {
           cm.execCommand('goWordRight');
         }
-        cm.execCommand('delWordBefore');
+        const rightEdge = cm.getCursor();
+        cm.execCommand('goWordRight');
+        const leftEdge = cm.getCursor();
+        cm.replaceRange('', leftEdge, rightEdge);
+        // cm.execCommand('delWordBefore');
       }
 
       // snippets
