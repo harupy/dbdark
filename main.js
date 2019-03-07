@@ -20,13 +20,12 @@
         cm.setCursor({line, ch});
       }
 
-      const spChars = [' ', ',', '.', '(', '[', '{', '+', '-', '*', '/', '=', '~', '%', '&', '@'];
-
       const deleteCursorWord = cm => {
         const cursor = cm.getCursor();
         const anchor = {line: cursor.line, ch: cursor.ch + 1};
         const charCursorRight = cm.getRange(cursor, anchor)
-        if (spChars.indexOf(charCursorRight) === -1) {
+        const regex = /[a-zA-Z0-9_]/  // characters which can be used as a variable name
+        if (charCursorRight.match(regex)) {
           cm.execCommand('goWordRight');
         }
         const rightEdge = cm.getCursor();
@@ -42,42 +41,48 @@
         const cursor = cm.getCursor();
         const cursorLine= cm.getLine(cursor.line);
         const cursorLeft = cursorLine.slice(0, cursor.ch);
-        const lastIdxs = spChars.map(c => cursorLeft.lastIndexOf(c));
-        const prefixStartIdx = Math.max(...lastIdxs) + 1;
-        const head = {line: cursor.line, ch: prefixStartIdx};
-        const prefix = cm.getRange(head, cursor);
+        const regex = /[^a-zA-Z0-9_]?([a-z]+)$/;
+        const match = cursorLeft.match(regex)
+        const prefix = match ? match[1] : '' ;
+        const head = {line: cursor.line, ch: cursor.ch - prefix.length};
 
         const snippets = {
-          'sl'    : 'select()',
-          'al'    : 'alias()',
-          'gb'    : 'groupBy()',
-          'pb'    : 'partitionBy()',
-          'fl'    : 'filter()',
-          'srt'   : 'spark.read.table()',
-          'srp'   : 'spark.read.parquet()',
-          'fft'   : 'from pyspark.sql import functions as f, types as t',
-          'cnt'   : 'count()',
-          'rn'    : 'round()',
-          'fna'   : 'fillna()',
-          'dcnt'  : 'distinctCount()',
-          'btw'   : 'between()',
-          'wc'    : 'withColumn()',
-          'wcr'   : 'withColumnRenamed()',
-          'dp'    : 'display()',
-          'jn'    : 'join()',
-          'ps'    : 'printSchema()',
-          'sh'    : 'show()',
-          'dt'    : 'distinct()',
-          'tpd'   : 'toPandas()',
-          'fc'    : 'f.col()',
-          'scs'   : 'sqlContext.sql()'
+          'sl'     : 'select()',
+          'al'     : 'alias()',
+          'gb'     : 'groupBy()',
+          'pb'     : 'partitionBy()',
+          'fl'     : 'filter()',
+          'srt'    : 'spark.read.table()',
+          'srp'    : 'spark.read.parquet()',
+          'fft'    : 'from pyspark.sql import functions as f, types as t',
+          'cnt'    : 'count()',
+          'rn'     : 'round()',
+          'fna'    : 'fillna()',
+          'dcnt'   : 'distinctCount()',
+          'btw'    : 'between()',
+          'wc'     : 'withColumn()',
+          'wcr'    : 'withColumnRenamed()',
+          'dp'     : 'display()',
+          'jn'     : 'join()',
+          'ps'     : 'printSchema()',
+          'sh'     : 'show()',
+          'dt'     : 'distinct()',
+          'tpd'    : 'toPandas()',
+          'fc'     : 'f.col()',
+          'scs'    : 'sqlContext.sql()',
+          'aggcnt' : 'agg(f.count())',
+          'aggdcnt': 'agg(f.distinctCount())',
+          'aggsum' : 'agg(f.sum())',
+          'aggmin' : 'agg(f.min())',
+          'aggmax' : 'agg(f.max())',
         };
 
         if (prefix in snippets) {
           const body = snippets[prefix];
           cm.replaceRange(body, head, cursor);
-          if (body.endsWith(')')) {
-            cm.moveH(-1, 'char');
+          const match = body.match(/\)+$/);
+          if (match) {
+            cm.moveH(-match[0].length, 'char');
           }
         } else {
           tabDefaultFunc(cm);

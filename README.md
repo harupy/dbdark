@@ -78,16 +78,20 @@ This feature allows you to trigger actions by pressing one or more keys multiple
 |`tpd`|`toPandas()`|
 |`fc`|`f.col()`|
 |`scs`|`sqlContext.sql()`|
+|`aggcnt`|`agg(f.cont())`|
+|`aggsum`|`agg(f.sum())`|
+|`aggmin`|`agg(f.min())`|
+|`aggmax`|`agg(f.max())`|
 
 ## Customize Snippets
-You can create your own snippet by adding a key/value pair to `snippets` in `main.js`.
+You can create your own snippets by adding a key/value pair to `snippets` in `main.js`.
 ```js
 const snippets = {
           'sl'    : 'select()',
           'al'    : 'alias()',
           'gb'    : 'groupBy()',
           ...
-          // add your own snippet
+          // add your own snippets
           'ms'   : 'mysnippet()',
       {
 ```
