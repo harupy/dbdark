@@ -30,7 +30,7 @@
           cm.execCommand('goWordRight');
         }
         const rightEdge = cm.getCursor();
-        cm.execCommand('goWordRight');
+        cm.execCommand('goWordLeft');
         const leftEdge = cm.getCursor();
         cm.replaceRange('', leftEdge, rightEdge);
         // cm.execCommand('delWordBefore');
