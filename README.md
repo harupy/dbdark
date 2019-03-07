@@ -43,7 +43,7 @@ Each cell on the notebook has an object called `CodeMirror` which provides funct
 |`Ctrl-Shift-u`|Duplicate the current line above|
 
 ## Key Sequences
-This feature allows you to trigger actions by pressing one or more keys multiple times **fast** in sequence. This feature is similar to mapping `jj` to `Esc` in Vim.
+This feature allows you to trigger actions by pressing one or more keys multiple times **fast** in sequence (similar to mapping `jj` to `Esc` in Vim).
 
 |Keys|Action|
 |:-|:-|
