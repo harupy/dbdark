@@ -3,9 +3,8 @@
 Just a little hack to enhance the editor functionality of Databricks notebook.
 
 <kbd>
-  <img src="demo.gif" style="thin solid black;">
+  <img src="https://user-images.githubusercontent.com/17039389/53938304-21371780-40f3-11e9-949e-00c38dddf488.gif" style="thin solid black;">
 </kbd>
-
 
 ## Installation
 1. Clone this repository
