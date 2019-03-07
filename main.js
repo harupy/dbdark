@@ -6,18 +6,43 @@
     if (cellEditing) {
       const duplicateLineBelow = cm => {
         const {line, ch} = cm.getCursor();
-        const currentLineContent = cm.getLine(line);
+        const cursorLine = cm.getLine(line);
         ['goLineRight', 'openLine', 'goLineDown'].forEach(cmd => cm.execCommand(cmd));
-        cm.replaceSelection(currentLineContent);
+        cm.replaceSelection(cursorLine);
         cm.setCursor({line: line + 1, ch});
       }
 
       const duplicateLineAbove = cm => {
         const {line, ch} = cm.getCursor();
-        const currentLineContent = cm.getLine(line);
-        ['goLineLeft', 'newlineAndIndent', 'goLineUp'].forEach(cmd => cm.execCommand(cmd));
-        cm.replaceSelection(currentLineContent);
+        const cursorLine = cm.getLine(line);
+        ['goLineLeft', 'openLine'].forEach(cmd => cm.execCommand(cmd));
+        cm.replaceSelection(cursorLine);
         cm.setCursor({line, ch});
+      }
+
+      const openBlankLineBelow = cm => {
+        const {line} = cm.getCursor();
+        const cursorLine = cm.getLine(line);
+        if (cursorLine.endsWith(':')) {
+          ['goLineRight', 'newlineAndIndent'].forEach(cmd => cm.execCommand(cmd));
+        } else {
+          ['goLineRight', 'openLine', 'goLineDown'].forEach(cmd => cm.execCommand(cmd));
+          cm.replaceSelection(cursorLine.match(/^\s*/)[0]);
+        }
+      }
+
+      const openBlankLineAbove = cm => {
+        const {line} = cm.getCursor();
+        const cursorLine = cm.getLine(line);
+        ['goLineLeft', 'openLine'].forEach(cmd => cm.execCommand(cmd));
+        cm.replaceSelection(cursorLine.match(/^\s*/)[0]);
+      }
+
+      const delLineLeft = cm => {
+        const {line} = cm.getCursor();
+        const cursorLine = cm.getLine(line);
+        cm.execCommand('goLineLeft');
+        cm.replaceSelection(cursorLine.match(/^\s*/)[0]);
       }
 
       const deleteCursorWord = cm => {
@@ -91,10 +116,10 @@
 
       // shortcuts
       const extraKeyActions = {
-        'Ctrl-O'      : ['goLineRight', 'newlineAndIndent'],
-        'Shift-Ctrl-O': ['goLineLeft', 'newlineAndIndent', 'goLineUp', 'indentAuto'],
+        'Ctrl-O'      : [openBlankLineBelow],
+        'Shift-Ctrl-O': [openBlankLineAbove],
         'Ctrl-L'      : ['delWrappedLineRight'],
-        'Ctrl-H'      : ['delWrappedLineLeft', 'indentAuto'],
+        'Ctrl-H'      : [delLineLeft],
         'Ctrl-K'      : [deleteCursorWord],
         'Ctrl-U'      : [duplicateLineBelow],
         'Shift-Ctrl-U': [duplicateLineAbove],
@@ -129,9 +154,9 @@
         cm.changedAt = now;
         
         const fastKeysActions = {
-          'jj': ['goLineRight', 'newlineAndIndent'],
+          'jj': [openBlankLineBelow],
+          'kk': [openBlankLineAbove],
           'jk': ['goLineRight'],
-          'kk': [deleteCursorWord],
         }
 
         if (lapseTime < 500) {

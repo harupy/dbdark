@@ -48,8 +48,8 @@ This feature allows you to trigger actions by pressing one or more keys multiple
 |Keys|Action|
 |:-|:-|
 |`jj`|Open a blank like below|
+|`kk`|Open a blank like above|
 |`jk`|Go to the end of the current line|
-|`kk`|Delete the word the cursor is on|
 
 
 ## Snippets (Press `Tab` to expand)
