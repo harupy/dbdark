@@ -92,7 +92,7 @@ const snippets = {
           ...
           // add your own snippets
           'ms'   : 'mysnippet()',
-      {
+}
 ```
 
 ## References
