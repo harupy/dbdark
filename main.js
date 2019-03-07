@@ -26,7 +26,7 @@
         const anchor = cm.getCursor();
         const head = {line: anchor.line, ch: anchor.ch + 1};
         const charCursorRight = cm.getRange(anchor, head)
-        if ((anchor.ch !== 0) && (spChars.indexOf(charCursorRight) === -1)) {
+        if (spChars.indexOf(charCursorRight) === -1) {
           cm.execCommand('goWordRight');
         }
         const rightEdge = cm.getCursor();
