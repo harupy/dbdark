@@ -24,7 +24,7 @@
         const cursor = cm.getCursor();
         const anchor = {line: cursor.line, ch: cursor.ch + 1};
         const charCursorRight = cm.getRange(cursor, anchor)
-        const regex = /[a-zA-Z0-9_]/  // characters which can be used as a variable name
+        const regex = /[a-zA-Z0-9_]/  // characters which can be used in a variable name
         if (charCursorRight.match(regex)) {
           cm.execCommand('goWordRight');
         }
@@ -70,11 +70,11 @@
           'tpd'    : 'toPandas()',
           'fc'     : 'f.col()',
           'scs'    : 'sqlContext.sql()',
-          'aggcnt' : 'agg(f.count())',
-          'aggdcnt': 'agg(f.distinctCount())',
-          'aggsum' : 'agg(f.sum())',
-          'aggmin' : 'agg(f.min())',
-          'aggmax' : 'agg(f.max())',
+          'agcnt'  : 'agg(f.count())',
+          'agdcnt' : 'agg(f.distinctCount())',
+          'agsum'  : 'agg(f.sum())',
+          'agmin'  : 'agg(f.min())',
+          'agmax'  : 'agg(f.max())',
         };
 
         if (prefix in snippets) {
@@ -91,11 +91,11 @@
 
       // shortcuts
       const extraKeyActions = {
-        'Ctrl-O'      : ['goLineRight', 'newlineAndIndent'],  // insert a new line below
-        'Shift-Ctrl-O': ['goLineLeft', 'newlineAndIndent', 'goLineUp', 'indentAuto'], // insert a new line above
-        'Ctrl-L'      : ['delWrappedLineRight'],  // kill line to end
-        'Ctrl-H'      : ['delWrappedLineLeft', 'indentAuto'],  // kill line to beginning
-        'Ctrl-K'      : [deleteCursorWord],  // delete inner word
+        'Ctrl-O'      : ['goLineRight', 'newlineAndIndent'],
+        'Shift-Ctrl-O': ['goLineLeft', 'newlineAndIndent', 'goLineUp', 'indentAuto'],
+        'Ctrl-L'      : ['delWrappedLineRight'],
+        'Ctrl-H'      : ['delWrappedLineLeft', 'indentAuto'],
+        'Ctrl-K'      : [deleteCursorWord],
         'Ctrl-U'      : [duplicateLineBelow],
         'Shift-Ctrl-U': [duplicateLineAbove],
         'Tab'         : [expandSnippetOrIndent],
