@@ -25,8 +25,8 @@
       const deleteCursorWord = cm => {
         const anchor = cm.getCursor();
         const head = {line: anchor.line, ch: anchor.ch + 1};
-        const charCursorLeft = cm.getRange(head, anchor)
-        if ((anchor.ch !== 0) && (spChars.indexOf(charCursorLeft) === -1)) {
+        const charCursorRight = cm.getRange(anchor, head)
+        if ((anchor.ch !== 0) && (spChars.indexOf(charCursorRight) === -1)) {
           cm.execCommand('goWordRight');
         }
         cm.execCommand('delWordBefore');
