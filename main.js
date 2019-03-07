@@ -32,8 +32,8 @@
         const rightEdge = cm.getCursor();
         cm.execCommand('goWordLeft');
         const leftEdge = cm.getCursor();
-        cm.replaceRange('', leftEdge, rightEdge);
         cm.setCursor(anchor);
+        cm.replaceRange('', leftEdge, rightEdge);
       }
 
       // snippets
