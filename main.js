@@ -109,7 +109,7 @@
         };
       }
 
-      // vim-like keybindings
+      // key sequences
       const onKeyup = (cm, e) => {
         const anchor = cm.getCursor();
         const head = {line: anchor.line, ch:anchor.ch - 2};
