@@ -1,6 +1,6 @@
 (() => {
   const enhanceCell = event => {
-  // cell in editing mode
+    // cell in the edit mode
     const cellEditing = document.querySelector('div.is-editing div.CodeMirror')
     
     if (cellEditing) {
