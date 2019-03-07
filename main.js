@@ -33,7 +33,7 @@
         cm.execCommand('goWordLeft');
         const leftEdge = cm.getCursor();
         cm.replaceRange('', leftEdge, rightEdge);
-        // cm.execCommand('delWordBefore');
+        cm.setCursor(anchor);
       }
 
       // snippets
