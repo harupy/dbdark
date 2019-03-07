@@ -41,7 +41,7 @@
         const cursor = cm.getCursor();
         const cursorLine= cm.getLine(cursor.line);
         const cursorLeft = cursorLine.slice(0, cursor.ch);
-        const regex = /[^a-zA-Z0-9_]?([a-z]+)$/;
+        const regex = /[^a-zA-Z0-9_]?([a-zA-Z0-9_]+)$/;
         const match = cursorLeft.match(regex)
         const prefix = match ? match[1] : '' ;
         const head = {line: cursor.line, ch: cursor.ch - prefix.length};
