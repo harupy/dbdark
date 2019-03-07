@@ -78,7 +78,7 @@ This feature allows you to trigger actions by pressing one or more keys multiple
 |`tpd`|`toPandas()`|
 |`fc`|`f.col()`|
 |`scs`|`sqlContext.sql()`|
-|`aggcnt`|`agg(f.cont())`|
+|`aggcnt`|`agg(f.count())`|
 |`aggsum`|`agg(f.sum())`|
 |`aggmin`|`agg(f.min())`|
 |`aggmax`|`agg(f.max())`|
