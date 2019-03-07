@@ -23,16 +23,16 @@
       const spChars = [' ', ',', '.', '(', '[', '{', '+', '-', '*', '/', '=', '~', '%', '&', '@'];
 
       const deleteCursorWord = cm => {
-        const anchor = cm.getCursor();
-        const head = {line: anchor.line, ch: anchor.ch + 1};
-        const charCursorRight = cm.getRange(anchor, head)
+        const cursor = cm.getCursor();
+        const anchor = {line: cursor.line, ch: cursor.ch + 1};
+        const charCursorRight = cm.getRange(cursor, anchor)
         if (spChars.indexOf(charCursorRight) === -1) {
           cm.execCommand('goWordRight');
         }
         const rightEdge = cm.getCursor();
         cm.execCommand('goWordLeft');
         const leftEdge = cm.getCursor();
-        cm.setCursor(anchor);
+        cm.setCursor(cursor);
         cm.replaceRange('', leftEdge, rightEdge);
       }
 
