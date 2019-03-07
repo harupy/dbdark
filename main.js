@@ -24,12 +24,12 @@
 
       const deleteCursorWord = cm => {
         const anchor = cm.getCursor();
-        const head = {line: anchor.line, ch: anchor.ch - 1};
+        const head = {line: anchor.line, ch: anchor.ch + 1};
         const charCursorLeft = cm.getRange(head, anchor)
         if ((anchor.ch !== 0) && (spChars.indexOf(charCursorLeft) === -1)) {
-          cm.execCommand('goWordLeft');
+          cm.execCommand('goWordRight');
         }
-        cm.execCommand('delWordAfter');
+        cm.execCommand('delWordBefore');
       }
 
       // snippets
@@ -65,6 +65,8 @@
           'sh'    : 'show()',
           'dt'    : 'distinct()',
           'tpd'   : 'toPandas()',
+          'fc'    : 'f.col()',
+          'scs'   : 'sqlContext.sql()'
         };
 
         if (prefix in snippets) {

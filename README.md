@@ -76,6 +76,8 @@ This feature allows you to trigger actions by pressing one or more keys multiple
 |`dp`|`display()`|
 |`jn`|`join()`|
 |`tpd`|`toPandas()`|
+|`fc`|`f.col()`|
+|`scs`|`sqlContext.sql()`|
 
 ## Customize Snippets
 You can create your own snippet by adding a key/value pair to `snippets` in `main.js`.
