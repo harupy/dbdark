@@ -44,11 +44,11 @@
         const prefix = cm.getRange(head, cursor);
 
         const snippets = {
-          'sl'   : 'select()',
+          'sl'    : 'select()',
           'al'    : 'alias()',
           'gb'    : 'groupBy()',
           'pb'    : 'partitionBy()',
-          'fl'   : 'filter()',
+          'fl'    : 'filter()',
           'srt'   : 'spark.read.table()',
           'srp'   : 'spark.read.parquet()',
           'fft'   : 'from pyspark.sql import functions as f, types as t',
@@ -64,7 +64,7 @@
           'ps'    : 'printSchema()',
           'sh'    : 'show()',
           'dt'    : 'distinct()',
-          'tpd'    : 'toPandas()',
+          'tpd'   : 'toPandas()',
         };
 
         if (prefix in snippets) {
