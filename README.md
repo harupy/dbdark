@@ -17,7 +17,7 @@ Just a little hack to enhance the editor functionality of Databricks notebook.
 ## Usage
 The extension will be enabled automatically when you open a Databricks notebook.
 
-## Test
+## Getting Started
 1. Open a Databricks notebook
 2. Select a cell and enter the edit mode
 3. Type `df.gb`
@@ -26,7 +26,7 @@ The extension will be enabled automatically when you open a Databricks notebook.
 6. Press `jj` (A blank line will be inserted below)
 
 
-## How it works
+## How this works
 Each cell on the notebook has an object called `CodeMirror` which contains functions to get and edit the cell content. This extension injects a JS script to override some properties of `CodeMirror` and add features not provided by default.
 
 
@@ -69,8 +69,8 @@ Each cell on the notebook has an object called `CodeMirror` which contains funct
 |`jn`|`join()`|
 |`tpd`|`toPandas()`|
 
-## JJ Keys
-This feature is like mapping `jj` to `Esc` in Vim. Typing these keys fast in a row triggers the action.
+## Trigger Commands
+Typing these key sequences fast can trigger certain actions. 
 
 |Keys|Action|
 |:-|:-|
