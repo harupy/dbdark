@@ -38,10 +38,10 @@
         cm.replaceSelection(cursorLine.match(/^\s*/)[0]);
       }
 
-      const delLineLeft = cm => {
+      const delLineLeftSmart = cm => {
         const {line} = cm.getCursor();
         const cursorLine = cm.getLine(line);
-        cm.execCommand('goLineLeft');
+        cm.execCommand('delLineLeft');
         cm.replaceSelection(cursorLine.match(/^\s*/)[0]);
       }
 
@@ -119,7 +119,7 @@
         'Ctrl-O'      : [openBlankLineBelow],
         'Shift-Ctrl-O': [openBlankLineAbove],
         'Ctrl-L'      : ['delWrappedLineRight'],
-        'Ctrl-H'      : [delLineLeft],
+        'Ctrl-H'      : [delLineLeftSmart],
         'Ctrl-K'      : [deleteCursorWord],
         'Ctrl-U'      : [duplicateLineBelow],
         'Shift-Ctrl-U': [duplicateLineAbove],
