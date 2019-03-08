@@ -68,7 +68,7 @@ This feature allows you to trigger actions by pressing one or more keys multiple
 |`cnt`|`count()`|
 |`rn`|`round()`|
 |`fna`|`fillna()`|
-|`dcnt`|`distinctCount()`|
+|`cntd`|`countDistinct()`|
 |`btw`|`between()`|
 |`wc`|`withColumn()`|
 |`wcr`|`withColumnRenamed()`|
@@ -78,6 +78,7 @@ This feature allows you to trigger actions by pressing one or more keys multiple
 |`fc`|`f.col()`|
 |`scs`|`sqlContext.sql()`|
 |`agcnt`|`agg(f.count())`|
+|`agcntd`|`agg(f.countDistinct())`|
 |`agsum`|`agg(f.sum())`|
 |`agmin`|`agg(f.min())`|
 |`agmax`|`agg(f.max())`|
