@@ -59,6 +59,7 @@ This feature allows you to trigger actions by pressing one or more keys multiple
 |`al`|`alias()`|
 |`dt`|`distinct()`|
 |`gb`|`groupBy()`|
+|`ob`|`orderBy`|
 |`pb`|`partitionBy()`|
 |`ps`|`printSchema()`|
 |`fl`|`filter()`|

@@ -75,6 +75,7 @@
           'sl'     : 'select()',
           'al'     : 'alias()',
           'gb'     : 'groupBy()',
+          'ob'     : 'orderBy()',
           'pb'     : 'partitionBy()',
           'fl'     : 'filter()',
           'srt'    : 'spark.read.table()',
