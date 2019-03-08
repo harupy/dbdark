@@ -20,7 +20,7 @@ Just a little hack to enhance the editor functionality of Databricks notebook.
 1. Type `df.gb`
 1. Press `Tab` (`gb` will be expanded to `groupBy()`)
 1. Press `Ctrl-u` (The current line will be duplicated below)
-1. Type `jj` (A blank line will be inserted below)
+1. Type `jj` **fast** (A blank line will be inserted below)
 
 
 ## How this works
