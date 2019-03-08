@@ -100,6 +100,9 @@
           'agsum'  : 'agg(f.sum())',
           'agmin'  : 'agg(f.min())',
           'agmax'  : 'agg(f.max())',
+          'in'     : 'isNull()',
+          'inn'    : 'isNotNull()',
+          'ow'     : 'otherwise()',
         };
 
         if (prefix in snippets) {

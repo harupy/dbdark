@@ -82,6 +82,10 @@ This feature allows you to trigger actions by pressing one or more keys multiple
 |`agsum`|`agg(f.sum())`|
 |`agmin`|`agg(f.min())`|
 |`agmax`|`agg(f.max())`|
+|`in`|`isNull()`|
+|`inn`|`isNotNull()`|
+|`ow`|`otherwise()`|
+
 
 ## Customize Snippets
 You can create your own snippets by adding a key/value pair to `snippets` in `main.js`.
