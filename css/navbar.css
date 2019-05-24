@@ -1,0 +1,18 @@
+/* Action bar */
+.context-bar {
+  background-color: #333 !important;
+}
+
+/* Title bar */
+#topbar {
+  background-color: #333 !important;
+}
+
+.context-bar__right span,
+.context-bar__left > :not(.attach-cluster-select-wrapper) span,
+.attach-cluster-select > div:not(.react-select__menu) span,
+.context-bar i.fa:not(.status-indicator-icon),
+#topbar span,
+#topbar i.fa {
+  color: hsla(0, 100%, 100%, 0.8) !important;
+}
