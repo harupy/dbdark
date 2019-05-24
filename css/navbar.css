@@ -8,9 +8,7 @@
   background-color: #333 !important;
 }
 
-.context-bar__right span,
-.context-bar__left > :not(.attach-cluster-select-wrapper) span,
-.attach-cluster-select > div:not(.react-select__menu) span,
+.context-bar-link-text,
 .context-bar i.fa:not(.status-indicator-icon),
 #topbar span,
 #topbar i.fa {
