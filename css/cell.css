@@ -1,0 +1,84 @@
+/* Based on Sublime Text's Monokai theme */
+
+.ansiout {
+  color: #f8f8f2 !important;
+}
+
+.command-button {
+  color: #d1f0e5 !important;
+}
+
+.command-number {
+  color: #d1f0e5 !important;
+}
+
+.results-and-comments {
+  background: #011627 !important;
+  color: #f8f8f2 !important;
+}
+
+.command-active .CodeMirror-lines {
+  background-color: #011627 !important;
+  color: #f8f8f2 !important;
+  border: 1px solid lightgreen !important;
+}
+
+.mainCommand {
+  background-color: #011627 !important;
+  border: 1px solid #d1f0e5 !important;
+  padding-left: 3px !important;
+  border-left-width: 4px !important;
+  box-shadow: none;
+}
+
+.overallContainer {
+  background-color: #333 !important;
+}
+
+.CodeMirror-cursor {
+  border-left: 1px solid #f8f8f2 !important;
+}
+
+.CodeMirror-matchingbracket {
+  background: #5f7e97 !important;
+}
+
+.CodeMirror-selected {
+  background: #5f7e97 !important;
+}
+
+ul.jobs p {
+  color: white !important;
+}
+
+div.dataset-info-view span,
+div.dataset-info-view i,
+p.clickable-text,
+p.plotWarning {
+  color: white !important;
+}
+
+html {
+  -webkit-user-select: none;
+}
+
+div.widget.ui-resizable tr:hover td {
+  color: #011627;
+  background: #f8f8f2;
+}
+span.spark-advisor-header,
+span.spark-advisor-text {
+  color: black;
+}
+
+div.command-result-stats span:nth-child(2),
+div.command-result-stats span:nth-child(4) {
+  font-size: 15px !important;
+  color: #d1f0e5 !important;
+}
+
+div.command-result-stats span:nth-child(1),
+div.command-result-stats span:nth-child(3),
+div.command-result-stats span:nth-child(5) {
+  display: none !important;
+}

@@ -1,17 +1,16 @@
 {
   "name": "Databricks Notebook Enhancer",
   "version": "0.1",
-  "manifest_version" : 2,
+  "manifest_version": 2,
   "description": "Enhance the editor functionality of Databricks notebook",
   "icons": {
-    "48": "logo.png"
+    "48": "db_logo_red.png"
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://*.databricks.com/*"
-      ],
-      "js": ["contentscript.js"],
+      "matches": ["https://*.databricks.com/*"],
+      "js": ["content-script.js"],
+      "css": ["css/editor.css", "css/markdown.css", "css/cell.css"],
       "run_at": "document_idle"
     }
   ],
