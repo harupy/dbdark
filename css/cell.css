@@ -1,9 +1,25 @@
 .ansiout {
-  color: #f8f8f2 !important;
+  color: hsla(0, 100%, 100%, 0.8) !important;
 }
 
 .ansired {
   color: lightcoral !important;
+}
+
+.ansiblue {
+  color: lightskyblue !important;
+}
+
+.ansigreen {
+  color: lightgreen !important;
+}
+
+.ansiyellow {
+  color: lightyellow !important;
+}
+
+.ansicyan {
+  color: lightcyan !important;
 }
 
 /* Buttons on the top-right corner */
@@ -40,19 +56,19 @@ div.dataset-info-view span,
 div.dataset-info-view i,
 p.clickable-text,
 p.plotWarning {
-  color: f8f8f2 !important;
+  color: hsla(0, 100%, 100%, 0.8) !important;
 }
 
 /* Results */
 .results-and-comments {
   background-color: #011627 !important;
-  color: #f8f8f2 !important;
+  color: hsla(0, 100%, 100%, 0.8) !important;
 }
 
 /* Dataframe table */
 div.widget.ui-resizable tr:hover td {
   color: #011627;
-  background-color: #f8f8f2;
+  background-color: hsla(0, 100%, 100%, 0.8);
 }
 
 /* Suggestion from Databricks */

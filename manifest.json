@@ -14,6 +14,7 @@
         "css/markdown.css",
         "css/cell.css",
         "css/navbar.css",
+        "css/widget.css",
         "css/body.css"
       ],
       "run_at": "document_idle"

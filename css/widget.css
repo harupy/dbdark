@@ -1,0 +1,18 @@
+.input-widget-panel {
+  background-color: #333 !important;
+  border-bottom: 1px solid #e6e8ea !important;
+}
+
+.input-widget-panel div {
+  background-color: #333 !important;
+}
+
+.widget-panel-settings {
+  background-color: #333 !important;
+}
+
+.widget-panel-settings i.fa,
+.input-label,
+.css-xp4uvy {
+  color: hsla(0, 100%, 100%, 0.8) !important;
+}

@@ -9,6 +9,7 @@
 }
 
 .context-bar-link-text,
+.single-value--with-icon,
 .context-bar i.fa:not(.status-indicator-icon),
 #topbar span,
 #topbar i.fa {
