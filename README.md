@@ -1,5 +1,4 @@
 # DBDark
 
-A Chrome extension to apply a dark theme for Databricks notebooks
+A Chrome extension to apply a dark theme to Databricks notebooks
 
-![demo](./demo.png)
