@@ -14,3 +14,7 @@ A Chrome extension to apply a dark theme to Databricks notebooks
 1. Enable "Developer mode"
 1. Click "Load unpacked"
 1. Select the cloned folder
+
+## License
+
+MIT
