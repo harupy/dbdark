@@ -65,6 +65,10 @@ p.plotWarning {
   color: hsla(0, 100%, 100%, 0.8) !important;
 }
 
+.progress-bar-text {
+  color: hsla(0, 100%, 100%, 0.8) !important;
+}
+
 /* Dataframe table */
 div.widget.ui-resizable tr:hover td {
   color: #011627;
