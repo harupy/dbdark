@@ -15,6 +15,10 @@ A Chrome extension to apply a dark theme to Databricks notebooks
 1. Click `Load unpacked`
 1. Select the extension directory
 
+## Acknowledgements
+
+A huge thanks to Databricks for making data science and machine learning easier to access for everyone.
+
 ## License
 
 MIT
