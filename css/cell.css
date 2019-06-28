@@ -59,6 +59,11 @@ p.plotWarning {
   color: hsla(0, 100%, 100%, 0.8) !important;
 }
 
+/* Text on charts created by display */
+svg text {
+  fill: hsla(0, 100%, 100%, 0.8) !important;
+}
+
 /* Results */
 .results-and-comments {
   background-color: #011627 !important;
