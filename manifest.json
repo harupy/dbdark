@@ -1,6 +1,6 @@
 {
   "name": "DBDark",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "manifest_version": 2,
   "description": "Dark theme for Databricks notebooks",
   "icons": {
@@ -8,7 +8,10 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://*.databricks.com/*"],
+      "matches": [
+        "https://*.databricks.com/*",
+        "https://*.azuredatabricks.net/*"
+      ],
       "css": [
         "css/editor.css",
         "css/markdown.css",
