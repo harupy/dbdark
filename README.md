@@ -21,7 +21,7 @@ Make it Dark
 
 ## Acknowledgements
 
-A huge thanks to Databricks for making data science and machine learning easier to access for everyone.
+A huge thanks to Databricks for making big data simple.
 
 ## License
 
