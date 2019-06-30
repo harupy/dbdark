@@ -4,14 +4,11 @@
   "manifest_version": 2,
   "description": "Dark theme for Databricks notebooks",
   "icons": {
-    "48": "logo.png"
+    "48": "img/logo.png"
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://*.databricks.com/*",
-        "https://*.azuredatabricks.net/*"
-      ],
+      "matches": ["https://*.databricks.com/*", "https://*.azuredatabricks.net/*"],
       "css": [
         "css/editor.css",
         "css/markdown.css",
