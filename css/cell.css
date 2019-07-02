@@ -99,3 +99,8 @@ div.command-result-stats span:nth-child(3),
 div.command-result-stats span:nth-child(5) {
   display: none !important;
 }
+
+/* resize icon */
+div.ui-icon-gripsmall-diagonal-se {
+  background-color: hsla(0, 100%, 100%, 0.8) !important;
+}
