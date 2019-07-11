@@ -2,7 +2,7 @@
   "name": "DBDark",
   "version": "0.2.5",
   "manifest_version": 2,
-  "description": "Dark theme for Databricks notebooks",
+  "description": "Dark theme for Databricks",
   "icons": {
     "48": "img/logo.png"
   },
