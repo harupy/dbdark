@@ -50,7 +50,7 @@
   color: #5f7e97 !important;
 }
 
-/* Result area */
+/* result area */
 ul.jobs p,
 div.dataset-info-view span,
 div.dataset-info-view i,
@@ -59,12 +59,12 @@ p.plotWarning {
   color: hsla(0, 100%, 100%, 0.8) !important;
 }
 
-/* Text on charts created by display */
+/* text on charts created by display */
 svg text {
   fill: hsla(0, 100%, 100%, 0.8) !important;
 }
 
-/* Results */
+/* results */
 .results-and-comments {
   background-color: #011627 !important;
   color: hsla(0, 100%, 100%, 0.8) !important;
@@ -74,20 +74,20 @@ svg text {
   color: black !important;
 }
 
-/* Dataframe table */
+/* dataframe table */
 div.widget.ui-resizable tr:hover td {
   color: #011627;
   background-color: hsla(0, 100%, 100%, 0.8);
 }
 
-/* Suggestion from Databricks */
+/* suggestion from Databricks */
 span.spark-advisor-header,
 span.spark-advisor-text,
 span.spark-advisor-indicator {
   color: black;
 }
 
-/* Run info (when, whso, and how long it took) */
+/* run info (when, whso, and how long it took) */
 div.command-result-stats span:nth-child(2),
 div.command-result-stats span:nth-child(4) {
   font-size: 15px !important;
