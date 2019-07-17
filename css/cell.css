@@ -104,3 +104,8 @@ div.command-result-stats span:nth-child(5) {
 div.ui-icon-gripsmall-diagonal-se {
   background-color: #f5f5f5 !important;
 }
+
+/* cell header */
+input.editing-text {
+  color: hsla(0, 100%, 100%, 0.8) !important;
+}
