@@ -109,3 +109,7 @@ div.ui-icon-gripsmall-diagonal-se {
 input.editing-text {
   color: hsla(0, 100%, 100%, 0.8) !important;
 }
+
+iframe {
+  background-color: #f5f5f5 !important;
+}
