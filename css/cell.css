@@ -90,8 +90,8 @@ span.spark-advisor-indicator {
 /* run info (when, whso, and how long it took) */
 div.command-result-stats span:nth-child(2),
 div.command-result-stats span:nth-child(4) {
-  font-size: 15px !important;
-  color: #5f7e97 !important;
+  font-size: 12px !important;
+  color: lightblue !important;
 }
 
 div.command-result-stats span:nth-child(1),
