@@ -1,8 +1,12 @@
 /* background */
+.sidebar-main {
+  background-color: #011627 !important;
+  border-right: 1px solid #5f7e97 !important;
+}
 .overallContainer {
-  background-color: #333 !important;
+  background-color: #011627 !important;
 }
 
-.comments-panel-wrapper {
-  background-color: #333 !important;
+.notebook-view {
+  background-color: #011627 !important;
 }

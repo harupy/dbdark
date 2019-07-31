@@ -4,7 +4,7 @@
   border: 1px solid #5f7e97 !important;
 }
 
-.command-active .CodeMirror-lines {
+.is-editing .CodeMirror-lines {
   background-color: #011627 !important;
   color: #f8f8f2 !important;
   border: 1px solid lightgreen !important;

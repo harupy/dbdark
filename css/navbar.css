@@ -1,11 +1,16 @@
 /* action bar */
 .context-bar {
-  background-color: #333 !important;
+  background-color: #011627 !important;
+  border-bottom: 1px solid #5f7e97 !important;
 }
 
 /* title bar */
 #topbar {
-  background-color: #333 !important;
+  background-color: #011627 !important;
+}
+
+.attach-cluster-select-wrapper {
+  border: 1px solid #5f7e97 !important;
 }
 
 .context-bar-link-text,
@@ -45,7 +50,7 @@ a[data-name='Restart Cluster'] {
 
 .shortcut-command {
   background-color: #333 !important;
-  color: lightpink !important;
+  color: lightskyblue !important;
 }
 
 .plus-sign,

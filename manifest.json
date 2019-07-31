@@ -16,7 +16,8 @@
         "css/navbar.css",
         "css/widget.css",
         "css/body.css",
-        "css/modal.css"
+        "css/modal.css",
+        "css/sidebar.css"
       ],
       "run_at": "document_idle"
     }
