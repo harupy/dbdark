@@ -1,0 +1,18 @@
+@import './variables';
+
+#topbar {
+  background-color: $bg-color;
+}
+
+// notebook name
+#topbar span {
+  color: $font-color;
+}
+
+#topbar i.fa {
+  color: $line-color;
+
+  &:hover {
+    color: $highlight;
+  }
+}

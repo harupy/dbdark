@@ -1,0 +1,35 @@
+@import './variables';
+
+.history-panel-wrapper {
+  border: $border;
+}
+
+.history-panel {
+  width: 225px !important;
+  // border: $border;
+  background-color: $bg-color;
+}
+
+.history-git-bar {
+  background-color: $bg-color;
+}
+
+.history-preview,
+.history-preview-selected {
+  border-top: $border;
+  border-bottom: none;
+  background-color: $bg-color;
+}
+
+.history-preview:hover,
+.history-preview-selected:hover {
+  background-color: $hover;
+}
+
+.history-date-title {
+  color: $font-color;
+}
+
+.history-all-changes-saved {
+  color: lightgreen !important;
+}

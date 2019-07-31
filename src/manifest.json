@@ -13,10 +13,12 @@
         "css/editor.css",
         "css/markdown.css",
         "css/cell.css",
-        "css/navbar.css",
         "css/widget.css",
         "css/body.css",
-        "css/sidebar.css"
+        "css/sidebar.css",
+        "css/history-panel.css",
+        "css/topbar.css",
+        "css/context-bar.css"
       ],
       "run_at": "document_idle"
     }

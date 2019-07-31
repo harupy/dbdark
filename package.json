@@ -1,0 +1,24 @@
+{
+  "name": "dbdark",
+  "version": "1.0.0",
+  "description": "A Chrome extension to apply a dark theme on Databricks.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass src/scss -o src/css",
+    "dev": "node-sass -w src/scss -o src/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harupy/dbdark.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harupy/dbdark/issues"
+  },
+  "homepage": "https://github.com/harupy/dbdark#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

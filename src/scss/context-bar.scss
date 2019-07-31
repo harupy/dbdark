@@ -1,0 +1,86 @@
+@import './variables';
+
+$popup-gb-color: $hover-bg;
+
+// action-bar
+.context-bar {
+  background-color: $bg-color;
+  border-bottom: none !important;
+}
+
+// drop-down to select clusters
+.attach-cluster-select-wrapper {
+  border: $border;
+}
+
+.react-select__indicator-separator {
+  display: none !important;
+}
+
+.context-bar__left > div {
+  &:hover {
+    .context-bar-link-text,
+    .single-value--with-icon,
+    i.fa:not(.status-indicator-icon) {
+      color: $highlight;
+    }
+  }
+}
+
+.context-bar__right > div:not(#shortcut-content) > div,
+.context-bar__right > div:not(#shortcut-content) > a {
+  &:hover {
+    span,
+    i.fa {
+      color: $highlight;
+    }
+  }
+}
+
+.context-bar-link-text,
+.single-value--with-icon,
+.context-bar i.fa:not(.status-indicator-icon) {
+  color: $line-color;
+}
+
+// disable cluster restart button
+a[data-name='Restart Cluster'] {
+  pointer-events: none !important;
+  color: #dddddd !important;
+}
+
+.dropdown-menu {
+  background-color: $popup-gb-color;
+}
+
+#shortcut-content {
+  background-color: $popup-gb-color;
+}
+
+.dropdown-menu-item a,
+.dropdown-submenu a {
+  color: $font-color;
+}
+
+.shortcut-description {
+  color: $font-color;
+}
+
+.edit-mode-shortcuts h2,
+.command-mode-shortcuts h2 {
+  color: $font-color;
+}
+
+.shortcut-command {
+  background-color: $popup-gb-color;
+  color: lightskyblue !important;
+}
+
+.plus-sign,
+.shortcut-colon {
+  color: $font-color;
+}
+
+p.divider {
+  display: none;
+}

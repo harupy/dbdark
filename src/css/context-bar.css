@@ -1,0 +1,57 @@
+.context-bar {
+  background-color: #011627 !important;
+  border-bottom: none !important; }
+
+.attach-cluster-select-wrapper {
+  border: 1px solid #5f7e97 !important; }
+
+.react-select__indicator-separator {
+  display: none !important; }
+
+.context-bar__left > div:hover .context-bar-link-text,
+.context-bar__left > div:hover .single-value--with-icon,
+.context-bar__left > div:hover i.fa:not(.status-indicator-icon) {
+  color: lightblue !important; }
+
+.context-bar__right > div:not(#shortcut-content) > div:hover span,
+.context-bar__right > div:not(#shortcut-content) > div:hover i.fa,
+.context-bar__right > div:not(#shortcut-content) > a:hover span,
+.context-bar__right > div:not(#shortcut-content) > a:hover i.fa {
+  color: lightblue !important; }
+
+.context-bar-link-text,
+.single-value--with-icon,
+.context-bar i.fa:not(.status-indicator-icon) {
+  color: #5f7e97 !important; }
+
+a[data-name='Restart Cluster'] {
+  pointer-events: none !important;
+  color: #dddddd !important; }
+
+.dropdown-menu {
+  background-color: #0b253a !important; }
+
+#shortcut-content {
+  background-color: #0b253a !important; }
+
+.dropdown-menu-item a,
+.dropdown-submenu a {
+  color: rgba(255, 255, 255, 0.8) !important; }
+
+.shortcut-description {
+  color: rgba(255, 255, 255, 0.8) !important; }
+
+.edit-mode-shortcuts h2,
+.command-mode-shortcuts h2 {
+  color: rgba(255, 255, 255, 0.8) !important; }
+
+.shortcut-command {
+  background-color: #0b253a !important;
+  color: lightskyblue !important; }
+
+.plus-sign,
+.shortcut-colon {
+  color: rgba(255, 255, 255, 0.8) !important; }
+
+p.divider {
+  display: none; }

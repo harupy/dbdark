@@ -1,0 +1,139 @@
+@import './variables';
+
+.sidebar-main {
+  background-color: $bg-color;
+  border-right: $border;
+}
+
+.filetree-link,
+.sidebar-panel-link {
+  background-color: $bg-color;
+  color: $font-color;
+
+  &:hover {
+    background-color: $hover-bg;
+
+    // prevent font color from turning to gray on hover
+    span,
+    i.fa {
+      color: $font-color;
+    }
+  }
+}
+
+.filetree-list-item.top-link > a {
+  background-color: $bg-color;
+  color: $font-color;
+  border-bottom: $border;
+}
+
+.data-panel-header,
+.filebrowser-header {
+  background-color: $bg-color;
+  color: $font-color;
+  border-right: $border;
+  border-bottom: $border;
+}
+
+.ft-panel {
+  background-color: $bg-color;
+  color: $font-color;
+  border-right: $border;
+}
+
+.filebrowser-context-menu li a {
+  color: $font-color;
+}
+
+div.dropdown {
+  color: $line-color;
+}
+
+.ui-resizable-handle {
+  background-color: $line-color;
+}
+
+.ft-scroll-angle-left,
+.ft-scroll-angle-right {
+  background-color: $line-color;
+  color: $bg-color;
+
+  &:hover {
+    background-color: $highlight;
+    i.fa-angle-left,
+    i.fa-angle-right {
+      color: $bg-color;
+    }
+  }
+}
+
+i.fa-angle-left,
+i.fa-angle-right {
+  color: $font-color;
+}
+
+.home-folder i,
+.home-folder span {
+  color: #dbdbdb !important;
+}
+
+.panel-title {
+  background-color: $bg-color;
+  color: $font-color;
+  border-bottom: $border;
+}
+
+.sidebar-panel-element input {
+  background-color: $bg-color;
+  border: none !important;
+}
+
+i.fa.fa-caret-down {
+  color: $line-color;
+}
+
+.sidebar-element {
+  .sidebar-element-icon-inner {
+    border: $border;
+    i.fa {
+      color: $line-color;
+    }
+  }
+  span {
+    color: $line-color;
+  }
+}
+
+.sidebar-element.selected {
+  .sidebar-element-icon-inner {
+    background-color: $highlight;
+    border: 1px solid $highlight;
+    i.fa {
+      color: $bg-color;
+    }
+  }
+  span {
+    color: $highlight;
+  }
+}
+
+.sidebar-element:hover {
+  .sidebar-element-icon-inner {
+    border: 1px solid $highlight;
+    i.fa {
+      color: $highlight;
+    }
+  }
+  span {
+    color: $highlight;
+  }
+}
+
+.sidebar-element.selected:hover {
+  .sidebar-element-icon-inner {
+    border: 1px solid lightblue !important;
+    i.fa {
+      color: $bg-color;
+    }
+  }
+}

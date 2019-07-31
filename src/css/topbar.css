@@ -1,0 +1,10 @@
+#topbar {
+  background-color: #011627 !important; }
+
+#topbar span {
+  color: rgba(255, 255, 255, 0.8) !important; }
+
+#topbar i.fa {
+  color: #5f7e97 !important; }
+  #topbar i.fa:hover {
+    color: lightblue !important; }

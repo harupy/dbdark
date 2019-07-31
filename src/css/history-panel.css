@@ -1,0 +1,25 @@
+.history-panel-wrapper {
+  border: 1px solid #5f7e97 !important; }
+
+.history-panel {
+  width: 225px !important;
+  background-color: #011627 !important; }
+
+.history-git-bar {
+  background-color: #011627 !important; }
+
+.history-preview,
+.history-preview-selected {
+  border-top: 1px solid #5f7e97 !important;
+  border-bottom: none;
+  background-color: #011627 !important; }
+
+.history-preview:hover,
+.history-preview-selected:hover {
+  background-color: #0b253a !important; }
+
+.history-date-title {
+  color: rgba(255, 255, 255, 0.8) !important; }
+
+.history-all-changes-saved {
+  color: lightgreen !important; }

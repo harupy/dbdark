@@ -1,0 +1,13 @@
+@import './variables';
+
+// background
+
+.overallContainer {
+  background-color: $bg-color;
+  border-right: $border;
+}
+
+.notebook-view {
+  border-top: $border;
+  background-color: $bg-color;
+}
