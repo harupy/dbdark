@@ -2,7 +2,7 @@
 
 A Chrome extension to apply a dark theme on Databricks.
 
-![](https://user-images.githubusercontent.com/17039389/59431847-d418bf00-8e20-11e9-8c99-ebb7ff55310b.gif)
+![dbdark](https://user-images.githubusercontent.com/17039389/62255900-3877f800-b43a-11e9-919d-8395e063e7be.png)
 
 ## Installation
 
