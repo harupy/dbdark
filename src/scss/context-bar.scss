@@ -17,30 +17,17 @@ $popup-gb-color: $hover-bg;
   display: none !important;
 }
 
-.context-bar__left > div {
-  &:hover {
-    .context-bar-link-text,
-    .single-value--with-icon,
-    i.fa:not(.status-indicator-icon) {
-      color: $highlight;
-    }
-  }
-}
-
-.context-bar__right > div:not(#shortcut-content) > div,
-.context-bar__right > div:not(#shortcut-content) > a {
-  &:hover {
-    span,
-    i.fa {
-      color: $highlight;
-    }
+.context-bar__left > div,
+.context-bar__left > a {
+  svg {
+    fill: $font-color;
   }
 }
 
 .context-bar-link-text,
 .single-value--with-icon,
 .context-bar i.fa:not(.status-indicator-icon) {
-  color: $line-color;
+  color: $font-color;
 }
 
 // disable cluster restart button

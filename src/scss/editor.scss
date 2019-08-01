@@ -23,7 +23,7 @@ $editor-font-color: #f8f8f2 !important;
 }
 
 .CodeMirror-selected {
-  background-color: $border;
+  background-color: $line-color;
 }
 
 span.cm-comment {

@@ -8,7 +8,7 @@
   color: rgba(255, 255, 255, 0.8) !important; }
   .filetree-link:hover,
   .sidebar-panel-link:hover {
-    background-color: #0b253a !important; }
+    background-color: #5f7e97 !important; }
     .filetree-link:hover span,
     .filetree-link:hover i.fa,
     .sidebar-panel-link:hover span,
@@ -44,15 +44,11 @@ div.dropdown {
 .ft-scroll-angle-left,
 .ft-scroll-angle-right {
   background-color: #5f7e97 !important;
-  color: #011627 !important; }
+  color: #011627 !important;
+  border: 2px solid #5f7e97 !important; }
   .ft-scroll-angle-left:hover,
   .ft-scroll-angle-right:hover {
-    background-color: lightblue !important; }
-    .ft-scroll-angle-left:hover i.fa-angle-left,
-    .ft-scroll-angle-left:hover i.fa-angle-right,
-    .ft-scroll-angle-right:hover i.fa-angle-left,
-    .ft-scroll-angle-right:hover i.fa-angle-right {
-      color: #011627 !important; }
+    border: 2px solid rgba(255, 255, 255, 0.8) !important; }
 
 i.fa-angle-left,
 i.fa-angle-right {
@@ -75,31 +71,30 @@ i.fa.fa-caret-down {
   color: #5f7e97 !important; }
 
 .sidebar-element .sidebar-element-icon-inner {
-  border: 1px solid #5f7e97 !important; }
+  border: 1px solid rgba(255, 255, 255, 0.8) !important; }
   .sidebar-element .sidebar-element-icon-inner i.fa {
-    color: #5f7e97 !important; }
+    color: rgba(255, 255, 255, 0.8) !important; }
 
 .sidebar-element span {
-  color: #5f7e97 !important; }
-
-.sidebar-element.selected .sidebar-element-icon-inner {
-  background-color: lightblue !important;
-  border: 1px solid lightblue !important; }
-  .sidebar-element.selected .sidebar-element-icon-inner i.fa {
-    color: #011627 !important; }
-
-.sidebar-element.selected span {
-  color: lightblue !important; }
+  color: rgba(255, 255, 255, 0.8) !important; }
 
 .sidebar-element:hover .sidebar-element-icon-inner {
-  border: 1px solid lightblue !important; }
-  .sidebar-element:hover .sidebar-element-icon-inner i.fa {
-    color: lightblue !important; }
+  background-color: #5f7e97 !important; }
 
-.sidebar-element:hover span {
-  color: lightblue !important; }
+.sidebar-element.selected .sidebar-element-icon-inner {
+  background-color: #5f7e97 !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important; }
+  .sidebar-element.selected .sidebar-element-icon-inner i.fa {
+    color: rgba(255, 255, 255, 0.8) !important; }
+
+.sidebar-element.selected span {
+  color: rgba(255, 255, 255, 0.8) !important; }
 
 .sidebar-element.selected:hover .sidebar-element-icon-inner {
-  border: 1px solid lightblue !important; }
+  background-color: #5f7e97 !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important; }
   .sidebar-element.selected:hover .sidebar-element-icon-inner i.fa {
-    color: #011627 !important; }
+    color: rgba(255, 255, 255, 0.8) !important; }
+
+.sidebar-element.selected:hover span {
+  color: rgba(255, 255, 255, 0.8) !important; }
