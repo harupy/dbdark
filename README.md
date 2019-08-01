@@ -19,10 +19,6 @@ A Chrome extension to apply a dark theme on Databricks.
 
 [Getting Started Tutorial - Google Chrome](https://developer.chrome.com/extensions/getstarted#manifest)
 
-## Limitation
-
-Some existing styles are marked as `important`. These styles can't be changed.
-
 ## Acknowledgements
 
 A huge thanks to Databricks for making big data simple.
