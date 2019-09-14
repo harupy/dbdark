@@ -1,18 +1,22 @@
 @import './variables';
 
 #topbar {
-  background-color: $bg-color;
+	background-color: $bg-color;
 }
 
 // notebook name
 #topbar span {
-  color: $font-color;
+	color: $font-color;
 }
 
 #topbar i.fa {
-  color: $font-color;
+	color: $font-color;
 
-  &:hover {
-    color: $highlight;
-  }
+	&:hover {
+		color: $highlight;
+	}
+}
+
+.accounts-text {
+	color: $font-color;
 }
