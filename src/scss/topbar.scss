@@ -20,3 +20,13 @@
 .accounts-text {
 	color: $font-color;
 }
+
+#help-menu {
+	i,
+	span {
+		color: $font-color;
+	}
+	a:hover {
+		background-color: $hover;
+	}
+}
