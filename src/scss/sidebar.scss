@@ -1,134 +1,85 @@
 @import './variables';
 
 .sidebar-main {
-  background-color: $bg-color;
-  border-right: $border;
+	background-color: $bg-main;
+	border-right: $border;
 }
-
 .filetree-link,
 .sidebar-panel-link {
-  background-color: $bg-color;
-  color: $font-color;
+	background-color: $bg-main;
+	color: $font-main;
 
-  &:hover {
-    background-color: $line-color;
+	&:hover {
+		background-color: $line-main;
 
-    // prevent font color from turning to gray on hover
-    span,
-    i.fa {
-      color: $font-color;
-    }
-  }
-}
-
-.filetree-list-item.top-link > a {
-  background-color: $bg-color;
-  color: $font-color;
-  border-bottom: $border;
-}
-
-.data-panel-header,
-.filebrowser-header {
-  background-color: $bg-color;
-  color: $font-color;
-  border-right: $border;
-  border-bottom: $border;
+		// prevent font color from turning to gray on hover
+		span,
+		i.fa {
+			color: $font-main;
+		}
+	}
 }
 
 .ft-panel {
-  background-color: $bg-color;
-  color: $font-color;
-  border-right: $border;
-}
-
-.filebrowser-context-menu li a {
-  color: $font-color;
-}
-
-div.dropdown {
-  color: $line-color;
+	background-color: $bg-main;
+	color: $font-main;
+	border-right: $border;
 }
 
 .ui-resizable-handle {
-  background-color: $line-color;
-}
-
-.ft-scroll-angle-left,
-.ft-scroll-angle-right {
-  background-color: $line-color;
-  color: $bg-color;
-  border: 2px solid $line-color;
-
-  &:hover {
-    border: 2px solid $font-color;
-  }
-}
-
-i.fa-angle-left,
-i.fa-angle-right {
-  color: $font-color;
-}
-
-.home-folder i,
-.home-folder span {
-  color: #dbdbdb !important;
-}
-
-.panel-title {
-  background-color: $bg-color;
-  color: $font-color;
-  border-bottom: $border;
+	background-color: $line-main;
 }
 
 .sidebar-panel-element input {
-  background-color: $bg-color;
-  border: none !important;
-}
-
-i.fa.fa-caret-down {
-  color: $line-color;
+	background-color: $bg-main;
+	border: none !important;
 }
 
 .sidebar-element {
-  .sidebar-element-icon-inner {
-    border: 1px solid $font-color;
-    i.fa {
-      color: $font-color;
-    }
-  }
-  span {
-    color: $font-color;
-  }
+	.sidebar-element-icon-inner {
+		border: 1px solid $font-main;
+		i.fa {
+			color: $font-main;
+		}
+	}
+	span {
+		color: $font-main;
+	}
 }
 
 .sidebar-element:hover {
-  .sidebar-element-icon-inner {
-    background-color: $line-color;
-  }
+	.sidebar-element-icon-inner {
+		background-color: $line-main;
+	}
 }
 
 .sidebar-element.selected {
-  .sidebar-element-icon-inner {
-    background-color: $line-color;
-    border: 1px solid $font-color;
-    i.fa {
-      color: $font-color;
-    }
-  }
-  span {
-    color: $font-color;
-  }
+	.sidebar-element-icon-inner {
+		background-color: $line-main;
+		border: 1px solid $font-main;
+		i.fa {
+			color: $font-main;
+		}
+	}
+	span {
+		color: $font-main;
+	}
 }
 
 .sidebar-element.selected:hover {
-  .sidebar-element-icon-inner {
-    background-color: $line-color;
-    border: 1px solid $font-color;
-    i.fa {
-      color: $font-color;
-    }
-  }
-  span {
-    color: $font-color;
-  }
+	.sidebar-element-icon-inner {
+		background-color: $line-main;
+		border: 1px solid $font-main;
+		i.fa {
+			color: $font-main;
+		}
+	}
+	span {
+		color: $font-main;
+	}
+}
+
+span.history-author-text,
+span.clear-history-entry {
+	color: $font-main;
 }

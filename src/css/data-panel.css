@@ -1,0 +1,14 @@
+.data-panel .data-panel-header {
+  background-color: #011627 !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-right: 1px solid #5f7e97 !important;
+  border-bottom: 1px solid #5f7e97 !important; }
+
+.data-panel .database-panel-title {
+  background-color: #011627 !important;
+  color: rgba(255, 255, 255, 0.8) !important; }
+
+.data-panel .panel-title {
+  background-color: #011627 !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-bottom: 1px solid #5f7e97 !important; }

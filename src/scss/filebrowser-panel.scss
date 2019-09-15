@@ -1,0 +1,95 @@
+@import './variables';
+
+#filebrowser-popup {
+	.filebrowser-header {
+		background-color: $bg-main;
+		color: $font-main;
+		border-right: $border;
+		border-bottom: $border;
+	}
+
+	a {
+		color: $font-main;
+
+		&:hover {
+			color: $font-main;
+			background-color: $line-main;
+		}
+	}
+
+	.filetree-list-item.top-link > a {
+		border-bottom: $border;
+	}
+
+	.filetree-display-name {
+		color: $font-main;
+
+		&:hover {
+			color: $font-main;
+			background-color: $line-main;
+		}
+	}
+
+	i.fa-angle-left,
+	i.fa-angle-right {
+		color: $font-main;
+	}
+
+	// ▼ button on each file
+	i.fa.fa-chevron-down,
+	i.fa.fa-caret-down {
+		color: $font-main;
+	}
+
+	// by default opacity is set to 0.1
+	.dropdown {
+		opacity: 1 !important;
+	}
+
+	.home-folder {
+		background-color: $bg-main;
+		i,
+		span {
+			color: #dbdbdb !important;
+		}
+	}
+
+	.ft-scroll-angle-left,
+	.ft-scroll-angle-right {
+		background-color: $line-main;
+		color: $bg-main;
+		border: 2px solid $line-main;
+
+		&:hover {
+			border: 2px solid $font-main;
+		}
+	}
+}
+
+// dropdown menu which shows up when clicking the header
+.filebrowser-context-menu {
+	background-color: $bg-sub;
+
+	a {
+		color: $font-main;
+		background-image: $none;
+
+		&:hover {
+			background-color: $hover-dropdown;
+		}
+	}
+
+	// nested dropdown
+	.dropdown-menu {
+		background-color: $bg-sub;
+	}
+
+	.dropdown-submenu:hover > a {
+		background-image: $none;
+		background-color: $hover-dropdown;
+	}
+}
+
+.recent-panel-title {
+	color: $font-main;
+}

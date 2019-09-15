@@ -15,60 +15,17 @@
     .sidebar-panel-link:hover i.fa {
       color: rgba(255, 255, 255, 0.8) !important; }
 
-.filetree-list-item.top-link > a {
-  background-color: #011627 !important;
-  color: rgba(255, 255, 255, 0.8) !important;
-  border-bottom: 1px solid #5f7e97 !important; }
-
-.data-panel-header,
-.filebrowser-header {
-  background-color: #011627 !important;
-  color: rgba(255, 255, 255, 0.8) !important;
-  border-right: 1px solid #5f7e97 !important;
-  border-bottom: 1px solid #5f7e97 !important; }
-
 .ft-panel {
   background-color: #011627 !important;
   color: rgba(255, 255, 255, 0.8) !important;
   border-right: 1px solid #5f7e97 !important; }
 
-.filebrowser-context-menu li a {
-  color: rgba(255, 255, 255, 0.8) !important; }
-
-div.dropdown {
-  color: #5f7e97 !important; }
-
 .ui-resizable-handle {
   background-color: #5f7e97 !important; }
-
-.ft-scroll-angle-left,
-.ft-scroll-angle-right {
-  background-color: #5f7e97 !important;
-  color: #011627 !important;
-  border: 2px solid #5f7e97 !important; }
-  .ft-scroll-angle-left:hover,
-  .ft-scroll-angle-right:hover {
-    border: 2px solid rgba(255, 255, 255, 0.8) !important; }
-
-i.fa-angle-left,
-i.fa-angle-right {
-  color: rgba(255, 255, 255, 0.8) !important; }
-
-.home-folder i,
-.home-folder span {
-  color: #dbdbdb !important; }
-
-.panel-title {
-  background-color: #011627 !important;
-  color: rgba(255, 255, 255, 0.8) !important;
-  border-bottom: 1px solid #5f7e97 !important; }
 
 .sidebar-panel-element input {
   background-color: #011627 !important;
   border: none !important; }
-
-i.fa.fa-caret-down {
-  color: #5f7e97 !important; }
 
 .sidebar-element .sidebar-element-icon-inner {
   border: 1px solid rgba(255, 255, 255, 0.8) !important; }
@@ -97,4 +54,8 @@ i.fa.fa-caret-down {
     color: rgba(255, 255, 255, 0.8) !important; }
 
 .sidebar-element.selected:hover span {
+  color: rgba(255, 255, 255, 0.8) !important; }
+
+span.history-author-text,
+span.clear-history-entry {
   color: rgba(255, 255, 255, 0.8) !important; }

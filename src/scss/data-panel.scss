@@ -1,0 +1,21 @@
+@import './variables';
+
+.data-panel {
+	.data-panel-header {
+		background-color: $bg-main;
+		color: $font-main;
+		border-right: $border;
+		border-bottom: $border;
+	}
+
+	.database-panel-title {
+		background-color: $bg-main;
+		color: $font-main;
+	}
+
+	.panel-title {
+		background-color: $bg-main;
+		color: $font-main;
+		border-bottom: $border;
+	}
+}

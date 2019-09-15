@@ -5,3 +5,7 @@
 .notebook-view {
   border-top: 1px solid #5f7e97 !important;
   background-color: #011627 !important; }
+
+.submit-hint,
+.shortcuts-link {
+  color: rgba(255, 255, 255, 0.8) !important; }

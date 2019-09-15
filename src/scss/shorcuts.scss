@@ -1,0 +1,28 @@
+@import './variables';
+
+#shortcut-content {
+	background-color: $bg-sub;
+
+	// title of edit and command mode shortcuts
+	.edit-mode-shortcuts,
+	.command-mode-shortcuts {
+		h2 {
+			color: $font-main;
+			border-bottom: $border;
+		}
+	}
+
+	.shortcut-command {
+		background-color: $bg-sub;
+		color: $highlight;
+	}
+
+	.plus-sign,
+	.shortcut-colon {
+		color: $font-main;
+	}
+
+	.shortcut-description {
+		color: $font-main;
+	}
+}

@@ -1,0 +1,14 @@
+@import './variables';
+
+#help-menu {
+	i,
+	span {
+		color: $font-main;
+	}
+
+	a:hover {
+		background-color: $hover-dropdown;
+	}
+
+	background-color: $bg-sub;
+}

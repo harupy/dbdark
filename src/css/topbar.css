@@ -1,13 +1,6 @@
 #topbar {
   background-color: #011627 !important; }
-
-#topbar span {
-  color: rgba(255, 255, 255, 0.8) !important; }
-
-#topbar i.fa {
-  color: rgba(255, 255, 255, 0.8) !important; }
-  #topbar i.fa:hover {
-    color: lightblue !important; }
-
-.accounts-text {
-  color: rgba(255, 255, 255, 0.8) !important; }
+  #topbar span {
+    color: rgba(255, 255, 255, 0.8) !important; }
+  #topbar i {
+    color: rgba(255, 255, 255, 0.8) !important; }

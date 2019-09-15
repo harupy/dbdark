@@ -1,74 +1,69 @@
-.CodeMirror-lines {
+.command-box .CodeMirror-lines {
   background-color: #011627 !important;
   color: #f8f8f2 !important;
   border: 1px solid #5f7e97 !important; }
 
-.is-editing .CodeMirror-lines {
-  background-color: #011627 !important;
-  color: #f8f8f2 !important;
-  border: 1px solid lightgreen !important; }
-
-.CodeMirror-cursor {
+.command-box .CodeMirror-cursor {
   border-left: 1px solid #f8f8f2 !important; }
 
-.CodeMirror-matchingbracket {
+.command-box .CodeMirror-matchingbracket {
   background-color: #5f7e97 !important; }
 
-.CodeMirror-selected {
+.command-box .CodeMirror-selected {
   background-color: #5f7e97 !important; }
 
-span.cm-comment {
+.command-box span.cm-comment {
   color: #637777 !important; }
 
-span.cm-atom {
+.command-box span.cm-atom {
   color: #ae81ff !important; }
 
-span.cm-number {
+.command-box span.cm-number {
   color: #f78c6c !important; }
 
-span.cm-property {
+.command-box span.cm-property {
   color: #f8f8f2 !important; }
 
-span.cm-attribute {
+.command-box span.cm-attribute {
   color: #f8f8f2 !important; }
 
-span.cm-keyword {
+.command-box span.cm-keyword {
   color: #c792ea !important;
   font-weight: normal !important; }
 
-span.cm-string {
+.command-box span.cm-string {
   color: #ecc48d !important; }
 
-span.cm-variable {
+.command-box span.cm-variable {
   color: #f8f8f2 !important; }
 
-span.cm-variable-2 {
+.command-box span.cm-variable-2 {
   color: #f8f8f2 !important; }
 
-span.cm-variable-3 {
+.command-box span.cm-variable-3 {
   color: #f8f8f2 !important; }
 
-span.cm-def {
+.command-box span.cm-def {
   color: #82aaff !important; }
 
-span.cm-bracket {
+.command-box span.cm-bracket {
   color: #f8f8f2 !important; }
 
-span.cm-tag {
+.command-box span.cm-tag {
   color: #f92672 !important; }
 
-span.cm-link {
+.command-box span.cm-link {
   color: #ae81ff !important; }
 
-span.cm-error {
+.command-box span.cm-error {
   background: #f92672 !important;
   color: #f8f8f2 !important; }
 
-span.cm-builtin {
+.command-box span.cm-builtin {
   color: #addb67 !important; }
 
-span.cm-operator {
+.command-box span.cm-operator {
   color: #c792ea !important; }
 
-span.cm-meta {
+.command-box span.cm-meta {
   color: #addb67 !important; }

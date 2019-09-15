@@ -1,136 +1,147 @@
 @import './variables';
 
-.ansiout {
-  color: $font-color;
-}
-
-.ansired {
-  color: lightcoral !important;
-}
-
-.ansiblue {
-  color: lightskyblue !important;
-}
-
-.ansigreen {
-  color: lightgreen !important;
-}
-
-.ansiyellow {
-  color: lightyellow !important;
-}
-
-.ansicyan {
-  color: lightcyan !important;
-}
-
-// buttons on the top-right corner
-.command-button {
-  color: $line-color;
-  &:hover {
-    color: lightblue !important;
-    i.fa {
-      color: lightblue !important;
-    }
-  }
-}
-
-// cell number on the top-left corner
+// cell number on the top-left corner of each cell
 .command-number {
-  color: $line-color;
+	color: $line-main;
 }
 
 // cell container
 .mainCommand {
-  background-color: $bg-color;
-  border: $border;
-  padding-left: 3px !important;
-  box-shadow: none !important;
+	background-color: $bg-main;
+	border: $border;
+	padding-left: 3px !important;
+	box-shadow: none !important;
 
-  &:hover {
-    border: 1px solid $highlight;
-  }
+	&:hover {
+		border: $border-highlight;
+	}
+
+	.ansiout {
+		color: $font-main;
+	}
+
+	.ansired {
+		color: lightcoral !important;
+	}
+
+	.ansiblue {
+		color: lightskyblue !important;
+	}
+
+	.ansigreen {
+		color: lightgreen !important;
+	}
+
+	.ansiyellow {
+		color: lightyellow !important;
+	}
+
+	.ansicyan {
+		color: lightcyan !important;
+	}
+
+	// command buttons on the top-right corner of each cell
+	.command-button {
+		color: $line-main;
+		&:hover {
+			color: lightblue !important;
+			i.fa {
+				color: lightblue !important;
+			}
+		}
+	}
+
+	.CodeMirror-gutters {
+		background-color: $bg-main;
+		border-right: 1px solid transparent !important;
+	}
+
+	.CodeMirror-linenumber {
+		color: $line-main;
+	}
+
+	// result area
+	ul.jobs p,
+	div.dataset-info-view span,
+	div.dataset-info-view i,
+	p.clickable-text,
+	p.plotWarning {
+		color: $font-main;
+	}
+
+	// results
+	.results-and-comments {
+		background-color: $bg-main;
+		color: $font-main;
+	}
+
+	// text on the progress bar when spark is running
+	.progress-bar-text {
+		color: black !important;
+	}
+
+	// dataframe table
+	div.widget.ui-resizable tr:hover td {
+		color: $bg-main;
+		background-color: $font-main;
+	}
+
+	// suggestions from Databricks
+	span.spark-advisor-header,
+	span.spark-advisor-text,
+	span.spark-advisor-indicator {
+		color: black;
+	}
+
+	// run info on the left-bottom
+	div.command-result-stats span {
+		font-size: 12px !important;
+		color: lightblue !important;
+	}
+
+	// resize icon to adjust table or figure size
+	div.ui-icon-gripsmall-diagonal-se {
+		background-color: #f5f5f5 !important;
+	}
+
+	// cell header
+	input.editing-text {
+		color: $font-main;
+	}
+
+	// text on charts created by display
+	svg text {
+		fill: $font-main;
+	}
+
+	iframe {
+		background-color: #f5f5f5 !important;
+	}
+
+	// when cell is active
+	&.new-notebook.command.command-active,
+	&.new-notebook.command.command-active:hover {
+		border: $active-border;
+	}
+
+	// when editing cell content
+	&.new-notebook.command.command-active.is-editing,
+	&.new-notebook.command.command-active.is-editing:hover {
+		border: $border;
+	}
+
+	&.is-editing .CodeMirror-lines {
+		border: $active-border;
+	}
 }
 
-.CodeMirror-gutters {
-  background-color: $bg-color;
-  border-right: 1px solid transparent !important;
-}
+// button to add a new cell
+.btn-circle {
+	background-color: $bg-main;
+	border: $border-highlight;
+	opacity: 1 !important;
 
-.CodeMirror-linenumber {
-  color: $line-color;
-}
-
-// result area
-ul.jobs p,
-div.dataset-info-view span,
-div.dataset-info-view i,
-p.clickable-text,
-p.plotWarning {
-  color: $font-color;
-}
-
-// text on charts created by display
-svg text {
-  fill: $font-color;
-}
-
-// results
-.results-and-comments {
-  background-color: $bg-color;
-  color: $font-color;
-}
-
-.progress-bar-text {
-  color: black !important;
-}
-
-// dataframe table
-div.widget.ui-resizable tr:hover td {
-  color: $bg-color;
-  background-color: $font-color;
-}
-
-// suggestion from Databricks
-span.spark-advisor-header,
-span.spark-advisor-text,
-span.spark-advisor-indicator {
-  color: black;
-}
-
-// run info
-div.command-result-stats span:nth-child(2),
-div.command-result-stats span:nth-child(4) {
-  font-size: 12px !important;
-  color: lightblue !important;
-}
-
-div.command-result-stats span:nth-child(1),
-div.command-result-stats span:nth-child(3),
-div.command-result-stats span:nth-child(5) {
-  display: none !important;
-}
-
-// resize icon
-div.ui-icon-gripsmall-diagonal-se {
-  background-color: #f5f5f5 !important;
-}
-
-iframe {
-  background-color: #f5f5f5 !important;
-}
-
-/* cell header */
-input.editing-text {
-  color: $font-color;
-}
-
-div.new-notebook.command.command-active,
-div.new-notebook.command.command-active:hover {
-  border: $active-border;
-}
-
-div.new-notebook.command.command-active.is-editing,
-div.new-notebook.command.command-active.is-editing:hover {
-  border: $border;
+	i.fa {
+		color: $highlight;
+	}
 }

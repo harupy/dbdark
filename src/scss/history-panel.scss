@@ -1,35 +1,35 @@
 @import './variables';
 
 .history-panel-wrapper {
-  border: $border;
-}
+	border: $border;
 
-.history-panel {
-  width: 225px !important;
-  // border: $border;
-  background-color: $bg-color;
-}
+	.history-panel {
+		width: 225px !important;
+		// border: $border;
+		background-color: $bg-main;
+	}
 
-.history-git-bar {
-  background-color: $bg-color;
-}
+	.history-git-bar {
+		background-color: $bg-main;
+	}
 
-.history-preview,
-.history-preview-selected {
-  border-top: $border;
-  border-bottom: none;
-  background-color: $bg-color;
-}
+	.history-preview,
+	.history-preview-selected {
+		border-top: $border;
+		border-bottom: none;
+		background-color: $bg-main;
+	}
 
-.history-preview:hover,
-.history-preview-selected:hover {
-  background-color: $hover;
-}
+	.history-preview:hover,
+	.history-preview-selected:hover {
+		background-color: $hover-dropdown;
+	}
 
-.history-date-title {
-  color: $font-color;
-}
+	.history-date-title {
+		color: $font-main;
+	}
 
-.history-all-changes-saved {
-  color: lightgreen !important;
+	.history-all-changes-saved {
+		color: lightgreen !important;
+	}
 }

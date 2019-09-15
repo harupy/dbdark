@@ -1,98 +1,92 @@
 @import './variables';
 
-$editor-font-color: #f8f8f2 !important;
+.command-box {
+	.CodeMirror-lines {
+		background-color: $bg-main;
+		color: $editor-font;
+		border: $border;
+	}
 
-.CodeMirror-lines {
-  background-color: $bg-color;
-  color: #f8f8f2 !important;
-  border: $border;
-}
+	.CodeMirror-cursor {
+		border-left: 1px solid $editor-font;
+	}
 
-.is-editing .CodeMirror-lines {
-  background-color: $bg-color;
-  color: $editor-font-color;
-  border: $active-border;
-}
+	.CodeMirror-matchingbracket {
+		background-color: $line-main;
+	}
 
-.CodeMirror-cursor {
-  border-left: 1px solid $editor-font-color;
-}
+	.CodeMirror-selected {
+		background-color: $line-main;
+	}
 
-.CodeMirror-matchingbracket {
-  background-color: $line-color;
-}
+	span.cm-comment {
+		color: #637777 !important;
+	}
+	span.cm-atom {
+		color: #ae81ff !important;
+	}
+	span.cm-number {
+		color: #f78c6c !important;
+	}
 
-.CodeMirror-selected {
-  background-color: $line-color;
-}
+	span.cm-property {
+		color: $editor-font;
+	}
 
-span.cm-comment {
-  color: #637777 !important;
-}
-span.cm-atom {
-  color: #ae81ff !important;
-}
-span.cm-number {
-  color: #f78c6c !important;
-}
+	span.cm-attribute {
+		color: $editor-font;
+	}
 
-span.cm-property {
-  color: #f8f8f2 !important;
-}
+	span.cm-keyword {
+		color: #c792ea !important;
+		font-weight: normal !important;
+	}
+	span.cm-string {
+		color: #ecc48d !important;
+	}
 
-span.cm-attribute {
-  color: #f8f8f2 !important;
-}
+	span.cm-variable {
+		color: $editor-font;
+	}
 
-span.cm-keyword {
-  color: #c792ea !important;
-  font-weight: normal !important;
-}
-span.cm-string {
-  color: #ecc48d !important;
-}
+	span.cm-variable-2 {
+		color: $editor-font;
+	}
 
-span.cm-variable {
-  color: #f8f8f2 !important;
-}
+	span.cm-variable-3 {
+		color: $editor-font;
+	}
 
-span.cm-variable-2 {
-  color: #f8f8f2 !important;
-}
+	span.cm-def {
+		color: #82aaff !important;
+	}
 
-span.cm-variable-3 {
-  color: #f8f8f2 !important;
-}
+	span.cm-bracket {
+		color: $editor-font;
+	}
 
-span.cm-def {
-  color: #82aaff !important;
-}
+	span.cm-tag {
+		color: #f92672 !important;
+	}
 
-span.cm-bracket {
-  color: #f8f8f2 !important;
-}
+	span.cm-link {
+		color: #ae81ff !important;
+	}
 
-span.cm-tag {
-  color: #f92672 !important;
-}
+	span.cm-error {
+		background: #f92672 !important;
+		color: $editor-font;
+	}
 
-span.cm-link {
-  color: #ae81ff !important;
-}
+	span.cm-builtin {
+		color: #addb67 !important;
+	}
 
-span.cm-error {
-  background: #f92672 !important;
-  color: #f8f8f2 !important;
-}
+	span.cm-operator {
+		color: #c792ea !important;
+	}
 
-span.cm-builtin {
-  color: #addb67 !important;
-}
-
-span.cm-operator {
-  color: #c792ea !important;
-}
-
-span.cm-meta {
-  color: #addb67 !important;
+	span.cm-meta {
+		color: #addb67 !important;
+	}
 }

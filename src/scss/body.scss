@@ -3,11 +3,16 @@
 // background
 
 .overallContainer {
-  background-color: $bg-color;
-  border-right: $border;
+	background-color: $bg-main;
+	border-right: $border;
 }
 
 .notebook-view {
-  border-top: $border;
-  background-color: $bg-color;
+	border-top: $border;
+	background-color: $bg-main;
+}
+
+.submit-hint,
+.shortcuts-link {
+	color: $font-main;
 }

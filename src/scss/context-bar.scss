@@ -1,73 +1,57 @@
 @import './variables';
 
-$popup-gb-color: $hover-bg;
-
-// action-bar
 .context-bar {
-  background-color: $bg-color;
-  border-bottom: none !important;
-}
+	background-color: $bg-main;
+	border-bottom: $none;
 
-// drop-down to select clusters
-.attach-cluster-select-wrapper {
-  border: $border;
-}
+	.context-bar__left > div,
+	.context-bar__left > a {
+		svg {
+			fill: $font-main;
+		}
+	}
 
-.react-select__indicator-separator {
-  display: none !important;
-}
+	.context-bar-link-text,
+	.single-value--with-icon,
+	i.fa:not(.status-indicator-icon) {
+		color: $font-main;
+	}
 
-.context-bar__left > div,
-.context-bar__left > a {
-  svg {
-    fill: $font-color;
-  }
-}
+	// drop-down to select clusters
+	.attach-cluster-select-wrapper {
+		border: $border;
+	}
 
-.context-bar-link-text,
-.single-value--with-icon,
-.context-bar i.fa:not(.status-indicator-icon) {
-  color: $font-color;
-}
+	.react-select__indicator-separator {
+		display: $none;
+	}
 
-// disable cluster restart button
-a[data-name='Restart Cluster'] {
-  pointer-events: none !important;
-  color: #dddddd !important;
-}
+	// disable cluster restart button
+	a[data-name='Restart Cluster'] {
+		pointer-events: $none;
+		color: #dddddd !important;
+	}
 
-.dropdown-menu {
-  background-color: $popup-gb-color;
-}
+	.dropdown-menu {
+		background-color: $bg-sub;
+	}
 
-#shortcut-content {
-  background-color: $popup-gb-color;
-}
+	.dropdown-menu-item a,
+	.dropdown-submenu a {
+		color: $font-main;
+		background-image: $none;
 
-.dropdown-menu-item a,
-.dropdown-submenu a {
-  color: $font-color;
-}
+		&:hover {
+			background-color: $hover-dropdown;
+		}
+	}
 
-.shortcut-description {
-  color: $font-color;
-}
+	.dropdown-submenu:hover > a {
+		background-image: $none;
+		background-color: $hover-dropdown;
+	}
 
-.edit-mode-shortcuts h2,
-.command-mode-shortcuts h2 {
-  color: $font-color;
-}
-
-.shortcut-command {
-  background-color: $popup-gb-color;
-  color: lightskyblue !important;
-}
-
-.plus-sign,
-.shortcut-colon {
-  color: $font-color;
-}
-
-p.divider {
-  display: none;
+	p.divider {
+		display: $none;
+	}
 }
