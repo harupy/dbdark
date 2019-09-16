@@ -1,6 +1,8 @@
 #topbar {
   background-color: #011627 !important; }
-  #topbar span {
+  #topbar span,
+  #topbar i.fa {
     color: rgba(255, 255, 255, 0.8) !important; }
-  #topbar i {
-    color: rgba(255, 255, 255, 0.8) !important; }
+  #topbar .presence-history.active {
+    box-shadow: none !important;
+    background-color: #5f7e97 !important; }

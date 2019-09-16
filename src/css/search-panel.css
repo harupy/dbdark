@@ -9,12 +9,10 @@
   .searchpanel input {
     color: rgba(255, 255, 255, 0.8) !important;
     background-color: #011627 !important;
-    border-bottom-color: rgba(255, 255, 255, 0.8) !important; }
+    border-bottom: 1px solid #5f7e97 !important; }
   .searchpanel a,
   .searchpanel i.fa {
     color: rgba(255, 255, 255, 0.8) !important; }
     .searchpanel a:hover,
     .searchpanel i.fa:hover {
       background-color: #5f7e97 !important; }
-  .searchpanel .searchbox {
-    border-bottom: 1px solid #5f7e97 !important; }

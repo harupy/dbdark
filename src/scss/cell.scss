@@ -10,7 +10,7 @@
 	background-color: $bg-main;
 	border: $border;
 	padding-left: 3px !important;
-	box-shadow: none !important;
+	box-shadow: $none;
 
 	&:hover {
 		border: $border-highlight;
@@ -20,6 +20,7 @@
 		color: $font-main;
 	}
 
+	// the color of a error traceback
 	.ansired {
 		color: lightcoral !important;
 	}
@@ -43,10 +44,11 @@
 	// command buttons on the top-right corner of each cell
 	.command-button {
 		color: $line-main;
+
 		&:hover {
-			color: lightblue !important;
+			color: $highlight;
 			i.fa {
-				color: lightblue !important;
+				color: $highlight;
 			}
 		}
 	}
@@ -114,6 +116,7 @@
 		fill: $font-main;
 	}
 
+	// for pandas dataframe
 	iframe {
 		background-color: #f5f5f5 !important;
 	}
@@ -124,7 +127,7 @@
 		border: $active-border;
 	}
 
-	// when editing cell content
+	// when editing cell content, highlight the editor border
 	&.new-notebook.command.command-active.is-editing,
 	&.new-notebook.command.command-active.is-editing:hover {
 		border: $border;

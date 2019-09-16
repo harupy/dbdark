@@ -17,3 +17,6 @@
     color: rgba(255, 255, 255, 0.8) !important; }
   .history-panel-wrapper .history-all-changes-saved {
     color: lightgreen !important; }
+  .history-panel-wrapper span.history-author-text,
+  .history-panel-wrapper span.clear-history-entry {
+    color: rgba(255, 255, 255, 0.8) !important; }

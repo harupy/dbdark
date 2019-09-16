@@ -10,6 +10,15 @@
     color: rgba(255, 255, 255, 0.8) !important;
     background-color: #5f7e97 !important; }
 
+#filebrowser-popup .filetree-link {
+  background-color: #011627 !important;
+  color: rgba(255, 255, 255, 0.8) !important; }
+  #filebrowser-popup .filetree-link:hover {
+    background-color: #5f7e97 !important; }
+    #filebrowser-popup .filetree-link:hover span,
+    #filebrowser-popup .filetree-link:hover i.fa {
+      color: rgba(255, 255, 255, 0.8) !important; }
+
 #filebrowser-popup .filetree-list-item.top-link > a {
   border-bottom: 1px solid #5f7e97 !important; }
 
@@ -18,10 +27,6 @@
   #filebrowser-popup .filetree-display-name:hover {
     color: rgba(255, 255, 255, 0.8) !important;
     background-color: #5f7e97 !important; }
-
-#filebrowser-popup i.fa-angle-left,
-#filebrowser-popup i.fa-angle-right {
-  color: rgba(255, 255, 255, 0.8) !important; }
 
 #filebrowser-popup i.fa.fa-chevron-down,
 #filebrowser-popup i.fa.fa-caret-down {
@@ -32,8 +37,8 @@
 
 #filebrowser-popup .home-folder {
   background-color: #011627 !important; }
-  #filebrowser-popup .home-folder i,
-  #filebrowser-popup .home-folder span {
+  #filebrowser-popup .home-folder span,
+  #filebrowser-popup .home-folder i.fa {
     color: #dbdbdb !important; }
 
 #filebrowser-popup .ft-scroll-angle-left,
@@ -44,6 +49,9 @@
   #filebrowser-popup .ft-scroll-angle-left:hover,
   #filebrowser-popup .ft-scroll-angle-right:hover {
     border: 2px solid rgba(255, 255, 255, 0.8) !important; }
+  #filebrowser-popup .ft-scroll-angle-left i.fa,
+  #filebrowser-popup .ft-scroll-angle-right i.fa {
+    color: rgba(255, 255, 255, 0.8) !important; }
 
 .filebrowser-context-menu {
   background-color: #0b253a !important; }
@@ -59,4 +67,5 @@
     background-color: #1ca0c2 !important; }
 
 .recent-panel-title {
-  color: rgba(255, 255, 255, 0.8) !important; }
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-bottom: 1px solid #5f7e97 !important; }

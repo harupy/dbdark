@@ -11,10 +11,11 @@
 		border-bottom: $border;
 	}
 
+	// input for a search query
 	input {
 		color: $font-main;
 		background-color: $bg-main;
-		border-bottom-color: $font-main;
+		border-bottom: $border;
 	}
 
 	a,
@@ -26,7 +27,7 @@
 		}
 	}
 
-	.searchbox {
-		border-bottom: $border;
-	}
+	// .searchbox {
+	// 	border-bottom: $border;
+	// }
 }

@@ -17,6 +17,21 @@
 		}
 	}
 
+	.filetree-link {
+		background-color: $bg-main;
+		color: $font-main;
+
+		&:hover {
+			background-color: $line-main;
+
+			// prevent font color from turning to gray on hover
+			span,
+			i.fa {
+				color: $font-main;
+			}
+		}
+	}
+
 	.filetree-list-item.top-link > a {
 		border-bottom: $border;
 	}
@@ -30,12 +45,7 @@
 		}
 	}
 
-	i.fa-angle-left,
-	i.fa-angle-right {
-		color: $font-main;
-	}
-
-	// ▼ button on each file
+	// down-arrow button on each file
 	i.fa.fa-chevron-down,
 	i.fa.fa-caret-down {
 		color: $font-main;
@@ -48,12 +58,14 @@
 
 	.home-folder {
 		background-color: $bg-main;
-		i,
-		span {
+
+		span,
+		i.fa {
 			color: #dbdbdb !important;
 		}
 	}
 
+	// arrow buttons to move between directories
 	.ft-scroll-angle-left,
 	.ft-scroll-angle-right {
 		background-color: $line-main;
@@ -62,6 +74,10 @@
 
 		&:hover {
 			border: 2px solid $font-main;
+		}
+
+		i.fa {
+			color: $font-main;
 		}
 	}
 }
@@ -90,6 +106,8 @@
 	}
 }
 
+// title of the recent panel
 .recent-panel-title {
 	color: $font-main;
+	border-bottom: $border;
 }

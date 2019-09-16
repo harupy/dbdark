@@ -1,7 +1,6 @@
 @import './variables';
 
 // background
-
 .overallContainer {
 	background-color: $bg-main;
 	border-right: $border;
@@ -12,6 +11,7 @@
 	background-color: $bg-main;
 }
 
+// hint at the bottom
 .submit-hint,
 .shortcuts-link {
 	color: $font-main;

@@ -3,8 +3,67 @@
 .sidebar-main {
 	background-color: $bg-main;
 	border-right: $border;
+
+	.sidebar-element {
+		.sidebar-element-icon-inner {
+			border: 1px solid $font-main;
+			i.fa {
+				color: $font-main;
+			}
+		}
+		span {
+			color: $font-main;
+		}
+	}
+
+	.sidebar-element:hover {
+		.sidebar-element-icon-inner {
+			background-color: $line-main;
+		}
+	}
+
+	.sidebar-element.selected {
+		.sidebar-element-icon-inner {
+			background-color: $line-main;
+			border: 1px solid $font-main;
+			i.fa {
+				color: $font-main;
+			}
+		}
+		span {
+			color: $font-main;
+		}
+	}
+
+	.sidebar-element.selected:hover {
+		.sidebar-element-icon-inner {
+			background-color: $line-main;
+			border: 1px solid $font-main;
+			i.fa {
+				color: $font-main;
+			}
+		}
+		span {
+			color: $font-main;
+		}
+	}
 }
-.filetree-link,
+
+.ft-panel {
+	color: $font-main;
+	background-color: $bg-main;
+	border-right: $border;
+}
+
+.ui-resizable-handle {
+	background-color: $line-main;
+}
+
+.sidebar-panel-element input {
+	background-color: $bg-main;
+	border: $none;
+}
+
 .sidebar-panel-link {
 	background-color: $bg-main;
 	color: $font-main;
@@ -18,68 +77,4 @@
 			color: $font-main;
 		}
 	}
-}
-
-.ft-panel {
-	background-color: $bg-main;
-	color: $font-main;
-	border-right: $border;
-}
-
-.ui-resizable-handle {
-	background-color: $line-main;
-}
-
-.sidebar-panel-element input {
-	background-color: $bg-main;
-	border: none !important;
-}
-
-.sidebar-element {
-	.sidebar-element-icon-inner {
-		border: 1px solid $font-main;
-		i.fa {
-			color: $font-main;
-		}
-	}
-	span {
-		color: $font-main;
-	}
-}
-
-.sidebar-element:hover {
-	.sidebar-element-icon-inner {
-		background-color: $line-main;
-	}
-}
-
-.sidebar-element.selected {
-	.sidebar-element-icon-inner {
-		background-color: $line-main;
-		border: 1px solid $font-main;
-		i.fa {
-			color: $font-main;
-		}
-	}
-	span {
-		color: $font-main;
-	}
-}
-
-.sidebar-element.selected:hover {
-	.sidebar-element-icon-inner {
-		background-color: $line-main;
-		border: 1px solid $font-main;
-		i.fa {
-			color: $font-main;
-		}
-	}
-	span {
-		color: $font-main;
-	}
-}
-
-span.history-author-text,
-span.clear-history-entry {
-	color: $font-main;
 }

@@ -32,4 +32,9 @@
 	.history-all-changes-saved {
 		color: lightgreen !important;
 	}
+
+	span.history-author-text,
+	span.clear-history-entry {
+		color: $font-main;
+	}
 }

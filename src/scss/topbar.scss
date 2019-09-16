@@ -2,11 +2,16 @@
 
 #topbar {
 	background-color: $bg-main;
-	span {
+
+	// text and icons on the topbar
+	span,
+	i.fa {
 		color: $font-main;
 	}
 
-	i {
-		color: $font-main;
+	// clock icon to show the recent activity
+	.presence-history.active {
+		box-shadow: $none;
+		background-color: $line-main;
 	}
 }
