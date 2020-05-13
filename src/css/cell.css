@@ -40,6 +40,9 @@
   .mainCommand .results-and-comments {
     background-color: #011627 !important;
     color: rgba(255, 255, 255, 0.8) !important; }
+  .mainCommand .results-and-comments pre {
+    background-color: #011627 !important;
+    color: rgba(255, 255, 255, 0.8) !important; }
   .mainCommand .progress-bar-text {
     color: black !important; }
   .mainCommand div.widget.ui-resizable tr:hover td {
