@@ -9,3 +9,8 @@
 .submit-hint,
 .shortcuts-link {
   color: rgba(255, 255, 255, 0.8) !important; }
+
+/** #topbar has zero-height, so body is visible and needs dark background */ 
+body {
+  background-color: #011627 !important;
+}
