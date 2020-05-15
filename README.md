@@ -17,7 +17,7 @@ A Chrome extension to apply a dark theme on Databricks.
 1. Open `chrome://extensions` on Chrome.
 1. Enable `Developer mode` if it's disabled.
 1. Click `Load unpacked`.
-1. Select `src` in the repository.
+1. Select `dist` in the repository.
 
 [Getting Started Tutorial - Google Chrome](https://developer.chrome.com/extensions/getstarted#manifest)
 
