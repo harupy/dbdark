@@ -1,7 +1,22 @@
 @import './variables';
 
 #topbar {
-  background-color: $bg-main;
+  .tb-title-wrapper {
+    margin-left: 0px;
+    padding-left: 10px;
+    background-color: $bg-main;
+    line-height: 42px;
+  }
+
+  .tb-button,
+  .workspace-name-icon-wrapper {
+    background-color: $bg-main;
+    line-height: 42px;
+  }
+
+  .tb-title-wrapper-right {
+    height: 42px;
+  }
 
   // text and icons on the topbar
   span,
@@ -13,5 +28,9 @@
   .presence-history.active {
     box-shadow: $none;
     background-color: $line-main;
+  }
+
+  .workspace-name {
+    text-shadow: none;
   }
 }
