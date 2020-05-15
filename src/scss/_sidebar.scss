@@ -1,80 +1,80 @@
 @import './variables';
 
 .sidebar-main {
-	background-color: $bg-main;
-	border-right: $border;
+  background-color: $bg-main;
+  border-right: $border;
 
-	.sidebar-element {
-		.sidebar-element-icon-inner {
-			border: 1px solid $font-main;
-			i.fa {
-				color: $font-main;
-			}
-		}
-		span {
-			color: $font-main;
-		}
-	}
+  .sidebar-element {
+    .sidebar-element-icon-inner {
+      border: 1px solid $font-main;
+      i.fa {
+        color: $font-main;
+      }
+    }
+    span {
+      color: $font-main;
+    }
+  }
 
-	.sidebar-element:hover {
-		.sidebar-element-icon-inner {
-			background-color: $line-main;
-		}
-	}
+  .sidebar-element:hover {
+    .sidebar-element-icon-inner {
+      background-color: $line-main;
+    }
+  }
 
-	.sidebar-element.selected {
-		.sidebar-element-icon-inner {
-			background-color: $line-main;
-			border: 1px solid $font-main;
-			i.fa {
-				color: $font-main;
-			}
-		}
-		span {
-			color: $font-main;
-		}
-	}
+  .sidebar-element.selected {
+    .sidebar-element-icon-inner {
+      background-color: $line-main;
+      border: 1px solid $font-main;
+      i.fa {
+        color: $font-main;
+      }
+    }
+    span {
+      color: $font-main;
+    }
+  }
 
-	.sidebar-element.selected:hover {
-		.sidebar-element-icon-inner {
-			background-color: $line-main;
-			border: 1px solid $font-main;
-			i.fa {
-				color: $font-main;
-			}
-		}
-		span {
-			color: $font-main;
-		}
-	}
+  .sidebar-element.selected:hover {
+    .sidebar-element-icon-inner {
+      background-color: $line-main;
+      border: 1px solid $font-main;
+      i.fa {
+        color: $font-main;
+      }
+    }
+    span {
+      color: $font-main;
+    }
+  }
 }
 
 .ft-panel {
-	color: $font-main;
-	background-color: $bg-main;
-	border-right: $border;
+  color: $font-main;
+  background-color: $bg-main;
+  border-right: $border;
 }
 
 .ui-resizable-handle {
-	background-color: $line-main;
+  background-color: $line-main;
 }
 
 .sidebar-panel-element input {
-	background-color: $bg-main;
-	border: $none;
+  background-color: $bg-main;
+  border: $none;
 }
 
 .sidebar-panel-link {
-	background-color: $bg-main;
-	color: $font-main;
+  background-color: $bg-main;
+  color: $font-main;
 
-	&:hover {
-		background-color: $line-main;
+  &:hover {
+    background-color: $line-main;
 
-		// prevent font color from turning to gray on hover
-		span,
-		i.fa {
-			color: $font-main;
-		}
-	}
+    // prevent font color from turning to gray on hover
+    span,
+    i.fa {
+      color: $font-main;
+    }
+  }
 }

@@ -1,33 +1,33 @@
 @import './variables';
 
 .searchpanel {
-	background-color: $bg-main;
-	border-color: $line-main;
+  background-color: $bg-main;
+  border-color: $line-main;
 
-	.category {
-		color: $line-main;
-		background-color: $bg-main;
-		border-top: $border;
-		border-bottom: $border;
-	}
+  .category {
+    color: $line-main;
+    background-color: $bg-main;
+    border-top: $border;
+    border-bottom: $border;
+  }
 
-	// input for a search query
-	input {
-		color: $font-main;
-		background-color: $bg-main;
-		border-bottom: $border;
-	}
+  // input for a search query
+  input {
+    color: $font-main;
+    background-color: $bg-main;
+    border-bottom: $border;
+  }
 
-	a,
-	i.fa {
-		color: $font-main;
+  a,
+  i.fa {
+    color: $font-main;
 
-		&:hover {
-			background-color: $line-main;
-		}
-	}
+    &:hover {
+      background-color: $line-main;
+    }
+  }
 
-	// .searchbox {
-	// 	border-bottom: $border;
-	// }
+  // .searchbox {
+  // 	border-bottom: $border;
+  // }
 }

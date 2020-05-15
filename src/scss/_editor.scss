@@ -1,92 +1,92 @@
 @import './variables';
 
 .command-box {
-	.CodeMirror-lines {
-		background-color: $bg-main;
-		color: $editor-font;
-		border: $border;
-	}
+  .CodeMirror-lines {
+    background-color: $bg-main;
+    color: $editor-font;
+    border: $border;
+  }
 
-	.CodeMirror-cursor {
-		border-left: 1px solid $editor-font;
-	}
+  .CodeMirror-cursor {
+    border-left: 1px solid $editor-font;
+  }
 
-	.CodeMirror-matchingbracket {
-		background-color: $line-main;
-	}
+  .CodeMirror-matchingbracket {
+    background-color: $line-main;
+  }
 
-	.CodeMirror-selected {
-		background-color: $line-main;
-	}
+  .CodeMirror-selected {
+    background-color: $line-main;
+  }
 
-	span.cm-comment {
-		color: #637777 !important;
-	}
-	span.cm-atom {
-		color: #ae81ff !important;
-	}
-	span.cm-number {
-		color: #f78c6c !important;
-	}
+  span.cm-comment {
+    color: #637777 !important;
+  }
+  span.cm-atom {
+    color: #ae81ff !important;
+  }
+  span.cm-number {
+    color: #f78c6c !important;
+  }
 
-	span.cm-property {
-		color: $editor-font;
-	}
+  span.cm-property {
+    color: $editor-font;
+  }
 
-	span.cm-attribute {
-		color: $editor-font;
-	}
+  span.cm-attribute {
+    color: $editor-font;
+  }
 
-	span.cm-keyword {
-		color: #c792ea !important;
-		font-weight: normal !important;
-	}
-	span.cm-string {
-		color: #ecc48d !important;
-	}
+  span.cm-keyword {
+    color: #c792ea !important;
+    font-weight: normal !important;
+  }
+  span.cm-string {
+    color: #ecc48d !important;
+  }
 
-	span.cm-variable {
-		color: $editor-font;
-	}
+  span.cm-variable {
+    color: $editor-font;
+  }
 
-	span.cm-variable-2 {
-		color: $editor-font;
-	}
+  span.cm-variable-2 {
+    color: $editor-font;
+  }
 
-	span.cm-variable-3 {
-		color: $editor-font;
-	}
+  span.cm-variable-3 {
+    color: $editor-font;
+  }
 
-	span.cm-def {
-		color: #82aaff !important;
-	}
+  span.cm-def {
+    color: #82aaff !important;
+  }
 
-	span.cm-bracket {
-		color: $editor-font;
-	}
+  span.cm-bracket {
+    color: $editor-font;
+  }
 
-	span.cm-tag {
-		color: #f92672 !important;
-	}
+  span.cm-tag {
+    color: #f92672 !important;
+  }
 
-	span.cm-link {
-		color: #ae81ff !important;
-	}
+  span.cm-link {
+    color: #ae81ff !important;
+  }
 
-	span.cm-error {
-		background: #f92672 !important;
-		color: $editor-font;
-	}
+  span.cm-error {
+    background: #f92672 !important;
+    color: $editor-font;
+  }
 
-	span.cm-builtin {
-		color: #addb67 !important;
-	}
+  span.cm-builtin {
+    color: #addb67 !important;
+  }
 
-	span.cm-operator {
-		color: #c792ea !important;
-	}
+  span.cm-operator {
+    color: #c792ea !important;
+  }
 
-	span.cm-meta {
-		color: #addb67 !important;
-	}
+  span.cm-meta {
+    color: #addb67 !important;
+  }
 }

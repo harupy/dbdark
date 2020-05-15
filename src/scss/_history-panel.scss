@@ -1,40 +1,40 @@
 @import './variables';
 
 .history-panel-wrapper {
-	border: $border;
+  border: $border;
 
-	.history-panel {
-		width: 225px !important;
-		// border: $border;
-		background-color: $bg-main;
-	}
+  .history-panel {
+    width: 225px !important;
+    // border: $border;
+    background-color: $bg-main;
+  }
 
-	.history-git-bar {
-		background-color: $bg-main;
-	}
+  .history-git-bar {
+    background-color: $bg-main;
+  }
 
-	.history-preview,
-	.history-preview-selected {
-		border-top: $border;
-		border-bottom: none;
-		background-color: $bg-main;
-	}
+  .history-preview,
+  .history-preview-selected {
+    border-top: $border;
+    border-bottom: none;
+    background-color: $bg-main;
+  }
 
-	.history-preview:hover,
-	.history-preview-selected:hover {
-		background-color: $hover-dropdown;
-	}
+  .history-preview:hover,
+  .history-preview-selected:hover {
+    background-color: $hover-dropdown;
+  }
 
-	.history-date-title {
-		color: $font-main;
-	}
+  .history-date-title {
+    color: $font-main;
+  }
 
-	.history-all-changes-saved {
-		color: lightgreen !important;
-	}
+  .history-all-changes-saved {
+    color: lightgreen !important;
+  }
 
-	span.history-author-text,
-	span.clear-history-entry {
-		color: $font-main;
-	}
+  span.history-author-text,
+  span.clear-history-entry {
+    color: $font-main;
+  }
 }
