@@ -1,17 +1,17 @@
 @import './variables';
 
 #topbar {
-	background-color: $bg-main;
+  background-color: $bg-main;
 
-	// text and icons on the topbar
-	span,
-	i.fa {
-		color: $font-main;
-	}
+  // text and icons on the topbar
+  span,
+  i.fa {
+    color: $font-main;
+  }
 
-	// clock icon to show the recent activity
-	.presence-history.active {
-		box-shadow: $none;
-		background-color: $line-main;
-	}
+  // clock icon to show the recent activity
+  .presence-history.active {
+    box-shadow: $none;
+    background-color: $line-main;
+  }
 }

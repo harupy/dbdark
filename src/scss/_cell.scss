@@ -2,149 +2,149 @@
 
 // cell number on the top-left corner of each cell
 .command-number {
-	color: $line-main;
+  color: $line-main;
 }
 
 // cell container
 .mainCommand {
-	background-color: $bg-main;
-	border: $border;
-	padding-left: 3px !important;
-	box-shadow: $none;
+  background-color: $bg-main;
+  border: $border;
+  padding-left: 3px !important;
+  box-shadow: $none;
 
-	&:hover {
-		border: $border-highlight;
-	}
+  &:hover {
+    border: $border-highlight;
+  }
 
-	.ansiout {
-		color: $font-main;
-	}
+  .ansiout {
+    color: $font-main;
+  }
 
-	// the color of a error traceback
-	.ansired {
-		color: lightcoral !important;
-	}
+  // the color of a error traceback
+  .ansired {
+    color: lightcoral !important;
+  }
 
-	.ansiblue {
-		color: lightskyblue !important;
-	}
+  .ansiblue {
+    color: lightskyblue !important;
+  }
 
-	.ansigreen {
-		color: lightgreen !important;
-	}
+  .ansigreen {
+    color: lightgreen !important;
+  }
 
-	.ansiyellow {
-		color: lightyellow !important;
-	}
+  .ansiyellow {
+    color: lightyellow !important;
+  }
 
-	.ansicyan {
-		color: lightcyan !important;
-	}
+  .ansicyan {
+    color: lightcyan !important;
+  }
 
-	// command buttons on the top-right corner of each cell
-	.command-button {
-		color: $line-main;
+  // command buttons on the top-right corner of each cell
+  .command-button {
+    color: $line-main;
 
-		&:hover {
-			color: $highlight;
-			i.fa {
-				color: $highlight;
-			}
-		}
-	}
+    &:hover {
+      color: $highlight;
+      i.fa {
+        color: $highlight;
+      }
+    }
+  }
 
-	.CodeMirror-gutters {
-		background-color: $bg-main;
-		border-right: 1px solid transparent !important;
-	}
+  .CodeMirror-gutters {
+    background-color: $bg-main;
+    border-right: 1px solid transparent !important;
+  }
 
-	.CodeMirror-linenumber {
-		color: $line-main;
-	}
+  .CodeMirror-linenumber {
+    color: $line-main;
+  }
 
-	// result area
-	ul.jobs p,
-	div.dataset-info-view span,
-	div.dataset-info-view i,
-	p.clickable-text,
-	p.plotWarning {
-		color: $font-main;
-	}
+  // result area
+  ul.jobs p,
+  div.dataset-info-view span,
+  div.dataset-info-view i,
+  p.clickable-text,
+  p.plotWarning {
+    color: $font-main;
+  }
 
-	// results
-	.results-and-comments {
-		background-color: $bg-main;
-		color: $font-main;
-	}
+  // results
+  .results-and-comments {
+    background-color: $bg-main;
+    color: $font-main;
+  }
 
-	// text on the progress bar when spark is running
-	.progress-bar-text {
-		color: black !important;
-	}
+  // text on the progress bar when spark is running
+  .progress-bar-text {
+    color: black !important;
+  }
 
-	// dataframe table
-	div.widget.ui-resizable tr:hover td {
-		color: $bg-main;
-		background-color: $font-main;
-	}
+  // dataframe table
+  div.widget.ui-resizable tr:hover td {
+    color: $bg-main;
+    background-color: $font-main;
+  }
 
-	// suggestions from Databricks
-	span.spark-advisor-header,
-	span.spark-advisor-text,
-	span.spark-advisor-indicator {
-		color: black;
-	}
+  // suggestions from Databricks
+  span.spark-advisor-header,
+  span.spark-advisor-text,
+  span.spark-advisor-indicator {
+    color: black;
+  }
 
-	// run info on the left-bottom
-	div.command-result-stats span {
-		font-size: 12px !important;
-		color: lightblue !important;
-	}
+  // run info on the left-bottom
+  div.command-result-stats span {
+    font-size: 12px !important;
+    color: lightblue !important;
+  }
 
-	// resize icon to adjust table or figure size
-	div.ui-icon-gripsmall-diagonal-se {
-		background-color: #f5f5f5 !important;
-	}
+  // resize icon to adjust table or figure size
+  div.ui-icon-gripsmall-diagonal-se {
+    background-color: #f5f5f5 !important;
+  }
 
-	// cell header
-	input.editing-text {
-		color: $font-main;
-	}
+  // cell header
+  input.editing-text {
+    color: $font-main;
+  }
 
-	// text on charts created by display
-	svg text {
-		fill: $font-main;
-	}
+  // text on charts created by display
+  svg text {
+    fill: $font-main;
+  }
 
-	// for pandas dataframe
-	iframe {
-		background-color: #f5f5f5 !important;
-	}
+  // for pandas dataframe
+  iframe {
+    background-color: #f5f5f5 !important;
+  }
 
-	// when cell is active
-	&.new-notebook.command.command-active,
-	&.new-notebook.command.command-active:hover {
-		border: $active-border;
-	}
+  // when cell is active
+  &.new-notebook.command.command-active,
+  &.new-notebook.command.command-active:hover {
+    border: $active-border;
+  }
 
-	// when editing cell content, highlight the editor border
-	&.new-notebook.command.command-active.is-editing,
-	&.new-notebook.command.command-active.is-editing:hover {
-		border: $border;
-	}
+  // when editing cell content, highlight the editor border
+  &.new-notebook.command.command-active.is-editing,
+  &.new-notebook.command.command-active.is-editing:hover {
+    border: $border;
+  }
 
-	&.is-editing .CodeMirror-lines {
-		border: $active-border;
-	}
+  &.is-editing .CodeMirror-lines {
+    border: $active-border;
+  }
 }
 
 // button to add a new cell
 .btn-circle {
-	background-color: $bg-main;
-	border: $border-highlight;
-	opacity: 1 !important;
+  background-color: $bg-main;
+  border: $border-highlight;
+  opacity: 1 !important;
 
-	i.fa {
-		color: $highlight;
-	}
+  i.fa {
+    color: $highlight;
+  }
 }

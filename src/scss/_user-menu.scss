@@ -1,29 +1,29 @@
 @import './variables';
 
 #user-menu {
-	background-color: $bg-sub;
+  background-color: $bg-sub;
 
-	.account-section,
-	.org-section {
-		.header {
-			color: $font-main;
-		}
-	}
+  .account-section,
+  .org-section {
+    .header {
+      color: $font-main;
+    }
+  }
 
-	hr {
-		border-color: $font-main;
-	}
+  hr {
+    border-color: $font-main;
+  }
 
-	.accounts-text {
-		color: $font-main;
-	}
+  .accounts-text {
+    color: $font-main;
+  }
 
-	.workspace-link,
-	.workspace-owner {
-		color: $font-main;
-	}
+  .workspace-link,
+  .workspace-owner {
+    color: $font-main;
+  }
 
-	.accounts-text {
-		color: rgba(255, 255, 255, 0.8) !important;
-	}
+  .accounts-text {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
 }

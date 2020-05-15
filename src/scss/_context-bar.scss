@@ -1,57 +1,57 @@
 @import './variables';
 
 .context-bar {
-	background-color: $bg-main;
-	border-bottom: $none;
+  background-color: $bg-main;
+  border-bottom: $none;
 
-	.context-bar__left > div,
-	.context-bar__left > a {
-		svg {
-			fill: $font-main;
-		}
-	}
+  .context-bar__left > div,
+  .context-bar__left > a {
+    svg {
+      fill: $font-main;
+    }
+  }
 
-	.context-bar-link-text,
-	.single-value--with-icon,
-	i.fa:not(.status-indicator-icon) {
-		color: $font-main;
-	}
+  .context-bar-link-text,
+  .single-value--with-icon,
+  i.fa:not(.status-indicator-icon) {
+    color: $font-main;
+  }
 
-	// drop-down to select clusters
-	.attach-cluster-select-wrapper {
-		border: $border;
-	}
+  // drop-down to select clusters
+  .attach-cluster-select-wrapper {
+    border: $border;
+  }
 
-	.react-select__indicator-separator {
-		display: $none;
-	}
+  .react-select__indicator-separator {
+    display: $none;
+  }
 
-	// disable cluster restart button
-	a[data-name='Restart Cluster'] {
-		pointer-events: $none;
-		color: #dddddd !important;
-	}
+  // disable cluster restart button
+  a[data-name='Restart Cluster'] {
+    pointer-events: $none;
+    color: #dddddd !important;
+  }
 
-	.dropdown-menu {
-		background-color: $bg-sub;
-	}
+  .dropdown-menu {
+    background-color: $bg-sub;
+  }
 
-	.dropdown-menu-item a,
-	.dropdown-submenu a {
-		color: $font-main;
-		background-image: $none;
+  .dropdown-menu-item a,
+  .dropdown-submenu a {
+    color: $font-main;
+    background-image: $none;
 
-		&:hover {
-			background-color: $hover-dropdown;
-		}
-	}
+    &:hover {
+      background-color: $hover-dropdown;
+    }
+  }
 
-	.dropdown-submenu:hover > a {
-		background-image: $none;
-		background-color: $hover-dropdown;
-	}
+  .dropdown-submenu:hover > a {
+    background-image: $none;
+    background-color: $hover-dropdown;
+  }
 
-	p.divider {
-		display: $none;
-	}
+  p.divider {
+    display: $none;
+  }
 }
