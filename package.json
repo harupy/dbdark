@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "node-sass src/scss/index.scss -o dist",
-    "dev": "node-sass -w src/scss/index.scss -o dist"
+    "dev": "node-sass -w src/scss/index.scss -o dist",
+    "lint": "prettier --check ./**/*.{json,scss}",
+    "lint:fix": "prettier --write ./**/*.{json,scss}"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/harupy/dbdark#readme",
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5"
   }
 }
